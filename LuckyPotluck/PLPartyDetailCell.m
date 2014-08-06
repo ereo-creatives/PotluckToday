@@ -9,6 +9,7 @@
 #import "PLPartyDetailCell.h"
 
 @implementation PLPartyDetailCell
+@synthesize attendentNameCell,foodNameCell;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

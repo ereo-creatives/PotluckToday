@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PLPartyDetailCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *attendentNameCell;
+@property (weak, nonatomic) IBOutlet UILabel *foodNameCell;
 
 @end

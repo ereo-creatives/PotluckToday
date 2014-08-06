@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PLMyPartyDetailViewController : UIViewController
+@interface PLMyPartyDetailViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

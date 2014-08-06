@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PLMyPartiesViewController : UIViewController
+@interface PLMyPartiesViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

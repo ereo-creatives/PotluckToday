@@ -24,6 +24,14 @@
 		DD374EBF1991EB8100B8F0F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E9E1991EB7A00B8F0F8 /* CoreData.framework */; };
 		DD374EC71991EB8200B8F0F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD374EC51991EB8200B8F0F8 /* InfoPlist.strings */; };
 		DD374ECA1991EB8300B8F0F8 /* LuckyPotluckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EC91991EB8300B8F0F8 /* LuckyPotluckTests.m */; };
+		DD374ED41991EBEF00B8F0F8 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD374ED31991EBEF00B8F0F8 /* Storyboard.storyboard */; };
+		DD374EDA1991F04A00B8F0F8 /* PLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374ED91991F04A00B8F0F8 /* PLHomeViewController.m */; };
+		DD374EDD1991F07B00B8F0F8 /* PLHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EDC1991F07B00B8F0F8 /* PLHostViewController.m */; };
+		DD374EE01991F09700B8F0F8 /* PLReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EDF1991F09700B8F0F8 /* PLReviewViewController.m */; };
+		DD374EE31991F0A700B8F0F8 /* PLMyPartiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EE21991F0A700B8F0F8 /* PLMyPartiesViewController.m */; };
+		DD374EE61991F0BB00B8F0F8 /* PLMyPartyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EE51991F0BB00B8F0F8 /* PLMyPartyDetailViewController.m */; };
+		DD374EE91991F2E000B8F0F8 /* PLPartyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EE81991F2E000B8F0F8 /* PLPartyCell.m */; };
+		DD374EEC1991F2F100B8F0F8 /* PLPartyDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EEB1991F2F100B8F0F8 /* PLPartyDetailCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +66,21 @@
 		DD374EC61991EB8200B8F0F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD374EC81991EB8300B8F0F8 /* LuckyPotluckTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LuckyPotluckTests.h; sourceTree = "<group>"; };
 		DD374EC91991EB8300B8F0F8 /* LuckyPotluckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuckyPotluckTests.m; sourceTree = "<group>"; };
+		DD374ED31991EBEF00B8F0F8 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		DD374ED81991F04A00B8F0F8 /* PLHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLHomeViewController.h; sourceTree = "<group>"; };
+		DD374ED91991F04A00B8F0F8 /* PLHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLHomeViewController.m; sourceTree = "<group>"; };
+		DD374EDB1991F07B00B8F0F8 /* PLHostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLHostViewController.h; sourceTree = "<group>"; };
+		DD374EDC1991F07B00B8F0F8 /* PLHostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLHostViewController.m; sourceTree = "<group>"; };
+		DD374EDE1991F09700B8F0F8 /* PLReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLReviewViewController.h; sourceTree = "<group>"; };
+		DD374EDF1991F09700B8F0F8 /* PLReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLReviewViewController.m; sourceTree = "<group>"; };
+		DD374EE11991F0A700B8F0F8 /* PLMyPartiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLMyPartiesViewController.h; sourceTree = "<group>"; };
+		DD374EE21991F0A700B8F0F8 /* PLMyPartiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLMyPartiesViewController.m; sourceTree = "<group>"; };
+		DD374EE41991F0BB00B8F0F8 /* PLMyPartyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLMyPartyDetailViewController.h; sourceTree = "<group>"; };
+		DD374EE51991F0BB00B8F0F8 /* PLMyPartyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLMyPartyDetailViewController.m; sourceTree = "<group>"; };
+		DD374EE71991F2DF00B8F0F8 /* PLPartyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPartyCell.h; sourceTree = "<group>"; };
+		DD374EE81991F2E000B8F0F8 /* PLPartyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPartyCell.m; sourceTree = "<group>"; };
+		DD374EEA1991F2F100B8F0F8 /* PLPartyDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPartyDetailCell.h; sourceTree = "<group>"; };
+		DD374EEB1991F2F100B8F0F8 /* PLPartyDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPartyDetailCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +143,23 @@
 		DD374EA01991EB7A00B8F0F8 /* LuckyPotluck */ = {
 			isa = PBXGroup;
 			children = (
+				DD374ED31991EBEF00B8F0F8 /* Storyboard.storyboard */,
 				DD374EA91991EB7D00B8F0F8 /* ECAppDelegate.h */,
 				DD374EAA1991EB7F00B8F0F8 /* ECAppDelegate.m */,
+				DD374ED81991F04A00B8F0F8 /* PLHomeViewController.h */,
+				DD374ED91991F04A00B8F0F8 /* PLHomeViewController.m */,
+				DD374EDB1991F07B00B8F0F8 /* PLHostViewController.h */,
+				DD374EDC1991F07B00B8F0F8 /* PLHostViewController.m */,
+				DD374EDE1991F09700B8F0F8 /* PLReviewViewController.h */,
+				DD374EDF1991F09700B8F0F8 /* PLReviewViewController.m */,
+				DD374EE11991F0A700B8F0F8 /* PLMyPartiesViewController.h */,
+				DD374EE21991F0A700B8F0F8 /* PLMyPartiesViewController.m */,
+				DD374EE41991F0BB00B8F0F8 /* PLMyPartyDetailViewController.h */,
+				DD374EE51991F0BB00B8F0F8 /* PLMyPartyDetailViewController.m */,
+				DD374EEA1991F2F100B8F0F8 /* PLPartyDetailCell.h */,
+				DD374EEB1991F2F100B8F0F8 /* PLPartyDetailCell.m */,
+				DD374EE71991F2DF00B8F0F8 /* PLPartyCell.h */,
+				DD374EE81991F2E000B8F0F8 /* PLPartyCell.m */,
 				DD374EB21991EB8000B8F0F8 /* LuckyPotluck.xcdatamodeld */,
 				DD374EA11991EB7D00B8F0F8 /* Supporting Files */,
 			);
@@ -209,6 +247,11 @@
 				CLASSPREFIX = EC;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Ereo Creatives";
+				TargetAttributes = {
+					DD374E941991EB7A00B8F0F8 = {
+						DevelopmentTeam = B62Z367ZB7;
+					};
+				};
 			};
 			buildConfigurationList = DD374E901991EB7800B8F0F8 /* Build configuration list for PBXProject "LuckyPotluck" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -237,6 +280,7 @@
 				DD374EAD1991EB7F00B8F0F8 /* Default.png in Resources */,
 				DD374EAF1991EB7F00B8F0F8 /* Default@2x.png in Resources */,
 				DD374EB11991EB8000B8F0F8 /* Default-568h@2x.png in Resources */,
+				DD374ED41991EBEF00B8F0F8 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +318,13 @@
 				DD374EA71991EB7D00B8F0F8 /* main.m in Sources */,
 				DD374EAB1991EB7F00B8F0F8 /* ECAppDelegate.m in Sources */,
 				DD374EB41991EB8100B8F0F8 /* LuckyPotluck.xcdatamodeld in Sources */,
+				DD374EDA1991F04A00B8F0F8 /* PLHomeViewController.m in Sources */,
+				DD374EDD1991F07B00B8F0F8 /* PLHostViewController.m in Sources */,
+				DD374EE01991F09700B8F0F8 /* PLReviewViewController.m in Sources */,
+				DD374EE31991F0A700B8F0F8 /* PLMyPartiesViewController.m in Sources */,
+				DD374EE61991F0BB00B8F0F8 /* PLMyPartyDetailViewController.m in Sources */,
+				DD374EE91991F2E000B8F0F8 /* PLPartyCell.m in Sources */,
+				DD374EEC1991F2F100B8F0F8 /* PLPartyDetailCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,10 +427,13 @@
 		DD374ECE1991EB8300B8F0F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yi Hsuan Fu (9HKH52337P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LuckyPotluck/LuckyPotluck-Prefix.pch";
 				INFOPLIST_FILE = "LuckyPotluck/LuckyPotluck-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -387,10 +441,13 @@
 		DD374ECF1991EB8300B8F0F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yi Hsuan Fu (9HKH52337P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LuckyPotluck/LuckyPotluck-Prefix.pch";
 				INFOPLIST_FILE = "LuckyPotluck/LuckyPotluck-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -448,6 +505,7 @@
 				DD374ECF1991EB8300B8F0F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD374ED01991EB8300B8F0F8 /* Build configuration list for PBXNativeTarget "LuckyPotluckTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +514,7 @@
 				DD374ED21991EB8300B8F0F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
