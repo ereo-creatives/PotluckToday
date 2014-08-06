@@ -10,14 +10,16 @@
 
 @interface PLMyPartiesViewController ()
 
+
+
 @end
 
 @implementation PLMyPartiesViewController
+@synthesize tableView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
 
 
