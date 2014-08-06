@@ -33,6 +33,7 @@
 		DD374EE61991F0BB00B8F0F8 /* PLMyPartyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EE51991F0BB00B8F0F8 /* PLMyPartyDetailViewController.m */; };
 		DD374EE91991F2E000B8F0F8 /* PLPartyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EE81991F2E000B8F0F8 /* PLPartyCell.m */; };
 		DD374EEC1991F2F100B8F0F8 /* PLPartyDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EEB1991F2F100B8F0F8 /* PLPartyDetailCell.m */; };
+		DDD10790199222FA00F9D63A /* Attendee.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1078F199222FA00F9D63A /* Attendee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		DD374EE81991F2E000B8F0F8 /* PLPartyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPartyCell.m; sourceTree = "<group>"; };
 		DD374EEA1991F2F100B8F0F8 /* PLPartyDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPartyDetailCell.h; sourceTree = "<group>"; };
 		DD374EEB1991F2F100B8F0F8 /* PLPartyDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPartyDetailCell.m; sourceTree = "<group>"; };
+		DDD1078E199222FA00F9D63A /* Attendee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attendee.h; sourceTree = "<group>"; };
+		DDD1078F199222FA00F9D63A /* Attendee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attendee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +118,12 @@
 		17A29B5B1992091E00DAE340 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				17A29B5E1992095500DAE340 /* Store */,
-				DD374EB21991EB8000B8F0F8 /* LuckyPotluck.xcdatamodeld */,
+				DDD1078E199222FA00F9D63A /* Attendee.h */,
+				DDD1078F199222FA00F9D63A /* Attendee.m */,
 				17C2659D199203E100C99970 /* Potluck.h */,
 				17C2659E199203E100C99970 /* Potluck.m */,
+				17A29B5E1992095500DAE340 /* Store */,
+				DD374EB21991EB8000B8F0F8 /* LuckyPotluck.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -355,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD374EA71991EB7D00B8F0F8 /* main.m in Sources */,
+				DDD10790199222FA00F9D63A /* Attendee.m in Sources */,
 				DD374EAB1991EB7F00B8F0F8 /* ECAppDelegate.m in Sources */,
 				DD374EB41991EB8100B8F0F8 /* LuckyPotluck.xcdatamodeld in Sources */,
 				DD374EDA1991F04A00B8F0F8 /* PLHomeViewController.m in Sources */,

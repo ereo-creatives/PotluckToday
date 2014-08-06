@@ -94,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="66" id="b0V-QM-lBL" customClass="PLPartyCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="partyCell" rowHeight="66" id="b0V-QM-lBL" customClass="PLPartyCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b0V-QM-lBL" id="mLv-kL-yP3">
@@ -114,8 +114,7 @@
                                     <constraint firstItem="55e-0W-whk" firstAttribute="top" secondItem="b0V-QM-lBL" secondAttribute="top" constant="22" id="eD3-wL-ed1"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="partyNameCell" destination="55e-0W-whk" id="N3F-U0-iqM"/>
-                                    <segue destination="BWC-gT-yxi" kind="push" id="mke-4b-Rbj"/>
+                                    <outlet property="partyNameLabel" destination="55e-0W-whk" id="B49-AN-cIm"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -127,6 +126,7 @@
                     <navigationItem key="navigationItem" title="My Parties" id="Ar7-Or-YjH"/>
                     <connections>
                         <outlet property="tableView" destination="O8i-7q-dud" id="wUd-qd-aBc"/>
+                        <segue destination="BWC-gT-yxi" kind="push" identifier="partyDetail" id="e0S-Ld-5yd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Xn-jd-xzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -158,7 +158,7 @@
                                     <constraint firstAttribute="height" constant="455" id="fcP-ZO-ZjP"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="63" id="1Bi-Sx-NGg" customClass="PLPartyDetailCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="PLPartyDetailCell" rowHeight="63" id="1Bi-Sx-NGg" customClass="PLPartyDetailCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Bi-Sx-NGg" id="bVe-NK-1K3">
@@ -192,8 +192,8 @@
                                             <constraint firstItem="Rgz-Xp-K8J" firstAttribute="leading" secondItem="1Bi-Sx-NGg" secondAttribute="leading" constant="28" id="OYR-DB-eyN"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="attendentNameCell" destination="Rgz-Xp-K8J" id="SXZ-gR-s22"/>
-                                            <outlet property="foodNameCell" destination="2q6-XC-vLK" id="zEH-0K-Vjd"/>
+                                            <outlet property="attendentNameLabel" destination="Rgz-Xp-K8J" id="WAM-GG-PEP"/>
+                                            <outlet property="foodNameLabel" destination="2q6-XC-vLK" id="A7D-I2-gRR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -326,6 +326,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contactTextField" destination="OHQ-sp-EjQ" id="ce5-eJ-NIe"/>
+                        <outlet property="locationTextField" destination="WmY-Th-Sx9" id="eiD-1A-BQ2"/>
+                        <outlet property="partyNameTextField" destination="ACN-8x-5eE" id="WOr-GZ-WKe"/>
+                        <outlet property="timeTextField" destination="V8W-78-4Jh" id="udQ-8u-dVz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="146-qY-rzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -398,6 +404,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Review Your Party Info" id="LV5-N9-kSi"/>
+                    <connections>
+                        <outlet property="contactLabel" destination="bqU-1z-Deb" id="83t-GZ-QP3"/>
+                        <outlet property="partyAddressLabel" destination="ibJ-Hc-0SD" id="Y26-sH-yx8"/>
+                        <outlet property="partyNameLabel" destination="tGk-fe-Zsw" id="fns-W2-q88"/>
+                        <outlet property="partyTimeLabel" destination="MHk-07-xQO" id="Q4m-rW-nby"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qne-d4-roy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

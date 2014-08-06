@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Potluck.h"
+#import "Attendee.h"
 
-@interface PLMyPartyDetailViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface PLMyPartyDetailViewController : UITableViewController <UITableViewDataSource>
+
+@property Potluck* selectedParty;
 
 @end

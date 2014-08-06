@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface PLHostViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *partyNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *timeTextField;
+@property (weak, nonatomic) IBOutlet UITextField *locationTextField;
+@property (weak, nonatomic) IBOutlet UITextField *contactTextField;
 
 @end
