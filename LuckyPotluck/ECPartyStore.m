@@ -56,7 +56,7 @@
     [_allPotlucks addObject:potluck];
     return potluck;
 }
-- (NSArray *)allTasks
+- (NSArray *)allPotlucks
 {
     if (!_allPotlucks) {
         NSFetchRequest *req = [[NSFetchRequest alloc] init];
