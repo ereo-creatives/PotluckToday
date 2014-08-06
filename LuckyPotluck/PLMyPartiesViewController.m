@@ -7,9 +7,14 @@
 //
 
 #import "PLMyPartiesViewController.h"
+#import "PLParty.h"
+#import "PLAttendees.h"
+#import "PLPartyCell.h"
+#import "PLPartyDetailCell.h"
 
 @interface PLMyPartiesViewController ()
 
+@property NSArray* partyArr;
 
 
 @end
@@ -27,7 +32,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return [_partyArr count];
 }
 
 
