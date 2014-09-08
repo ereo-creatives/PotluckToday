@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1774898519BDFB3C0004C7C2 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1774898419BDFB3C0004C7C2 /* Assets.bundle */; };
+		1785450F19BE0AE00087F9FC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1785450E19BE0AE00087F9FC /* Default-568h@2x.png */; };
+		1785451319BE0B5F0087F9FC /* ECDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1785451219BE0B5F0087F9FC /* ECDataStorage.m */; };
 		17C2659F199203E100C99970 /* Potluck.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C2659E199203E100C99970 /* Potluck.m */; };
 		DD374E991991EB7A00B8F0F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E981991EB7A00B8F0F8 /* UIKit.framework */; };
 		DD374E9B1991EB7A00B8F0F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E9A1991EB7A00B8F0F8 /* Foundation.framework */; };
@@ -45,6 +47,10 @@
 
 /* Begin PBXFileReference section */
 		1774898419BDFB3C0004C7C2 /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
+		1785450E19BE0AE00087F9FC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1785451119BE0B5F0087F9FC /* ECDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECDataStorage.h; sourceTree = "<group>"; };
+		1785451219BE0B5F0087F9FC /* ECDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECDataStorage.m; sourceTree = "<group>"; };
+		1785451419BE0DC40087F9FC /* ECConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECConstants.h; sourceTree = "<group>"; };
 		17C2659D199203E100C99970 /* Potluck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Potluck.h; sourceTree = "<group>"; };
 		17C2659E199203E100C99970 /* Potluck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Potluck.m; sourceTree = "<group>"; };
 		2332EA85EC5E4A0BA5449DBD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,18 +125,59 @@
 			name = Home;
 			sourceTree = "<group>";
 		};
-		1774898319BDFAA30004C7C2 /* Common */ = {
+		1774898319BDFAA30004C7C2 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				DD374ED31991EBEF00B8F0F8 /* Storyboard.storyboard */,
 				DD374EA91991EB7D00B8F0F8 /* ECAppDelegate.h */,
 				DD374EAA1991EB7F00B8F0F8 /* ECAppDelegate.m */,
-				DD374EA11991EB7D00B8F0F8 /* Supporting Files */,
-				17A29B5B1992091E00DAE340 /* Model */,
-				17A29B5D1992093300DAE340 /* View */,
-				1774898419BDFB3C0004C7C2 /* Assets.bundle */,
 			);
-			name = Common;
+			name = Application;
+			sourceTree = "<group>";
+		};
+		1774898619BDFD1F0004C7C2 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				DD374EDB1991F07B00B8F0F8 /* PLHostViewController.h */,
+				DD374EDC1991F07B00B8F0F8 /* PLHostViewController.m */,
+			);
+			name = Host;
+			sourceTree = "<group>";
+		};
+		1774898719BDFD290004C7C2 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				DD374EE11991F0A700B8F0F8 /* PLMyPartiesViewController.h */,
+				DD374EE21991F0A700B8F0F8 /* PLMyPartiesViewController.m */,
+				DD374EE41991F0BB00B8F0F8 /* PLMyPartyDetailViewController.h */,
+				DD374EE51991F0BB00B8F0F8 /* PLMyPartyDetailViewController.m */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
+		1774898819BDFD310004C7C2 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				DD374EDE1991F09700B8F0F8 /* PLReviewViewController.h */,
+				DD374EDF1991F09700B8F0F8 /* PLReviewViewController.m */,
+			);
+			name = Review;
+			sourceTree = "<group>";
+		};
+		1785450D19BE09160087F9FC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		1785451019BE0B310087F9FC /* Definition */ = {
+			isa = PBXGroup;
+			children = (
+				1785451119BE0B5F0087F9FC /* ECDataStorage.h */,
+				1785451219BE0B5F0087F9FC /* ECDataStorage.m */,
+			);
+			name = Definition;
 			sourceTree = "<group>";
 		};
 		17A29B5B1992091E00DAE340 /* Model */ = {
@@ -144,19 +191,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		17A29B5C1992092600DAE340 /* ViewController */ = {
+		17A29B5C1992092600DAE340 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DD374EDB1991F07B00B8F0F8 /* PLHostViewController.h */,
-				DD374EDC1991F07B00B8F0F8 /* PLHostViewController.m */,
-				DD374EDE1991F09700B8F0F8 /* PLReviewViewController.h */,
-				DD374EDF1991F09700B8F0F8 /* PLReviewViewController.m */,
-				DD374EE11991F0A700B8F0F8 /* PLMyPartiesViewController.h */,
-				DD374EE21991F0A700B8F0F8 /* PLMyPartiesViewController.m */,
-				DD374EE41991F0BB00B8F0F8 /* PLMyPartyDetailViewController.h */,
-				DD374EE51991F0BB00B8F0F8 /* PLMyPartyDetailViewController.m */,
+				1774898219BDFA940004C7C2 /* Home */,
+				1774898619BDFD1F0004C7C2 /* Host */,
+				1774898819BDFD310004C7C2 /* Review */,
+				1774898719BDFD290004C7C2 /* Mine */,
 			);
-			name = ViewController;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		17A29B5D1992093300DAE340 /* View */ = {
@@ -166,6 +209,7 @@
 				DD374EEB1991F2F100B8F0F8 /* PLPartyDetailCell.m */,
 				DD374EE71991F2DF00B8F0F8 /* PLPartyCell.h */,
 				DD374EE81991F2E000B8F0F8 /* PLPartyCell.m */,
+				1774898419BDFB3C0004C7C2 /* Assets.bundle */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -173,6 +217,7 @@
 		DD374E8C1991EB7800B8F0F8 = {
 			isa = PBXGroup;
 			children = (
+				1785450E19BE0AE00087F9FC /* Default-568h@2x.png */,
 				DD374EA01991EB7A00B8F0F8 /* LuckyPotluck */,
 				DD374EC21991EB8100B8F0F8 /* LuckyPotluckTests */,
 				DD374E971991EB7A00B8F0F8 /* Frameworks */,
@@ -205,9 +250,13 @@
 		DD374EA01991EB7A00B8F0F8 /* LuckyPotluck */ = {
 			isa = PBXGroup;
 			children = (
-				1774898319BDFAA30004C7C2 /* Common */,
-				1774898219BDFA940004C7C2 /* Home */,
-				17A29B5C1992092600DAE340 /* ViewController */,
+				1785451019BE0B310087F9FC /* Definition */,
+				1774898319BDFAA30004C7C2 /* Application */,
+				17A29B5C1992092600DAE340 /* Controller */,
+				1785450D19BE09160087F9FC /* Manager */,
+				17A29B5B1992091E00DAE340 /* Model */,
+				17A29B5D1992093300DAE340 /* View */,
+				DD374EA11991EB7D00B8F0F8 /* Supporting Files */,
 			);
 			path = LuckyPotluck;
 			sourceTree = "<group>";
@@ -215,10 +264,11 @@
 		DD374EA11991EB7D00B8F0F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1785451419BE0DC40087F9FC /* ECConstants.h */,
+				DD374EA81991EB7D00B8F0F8 /* LuckyPotluck-Prefix.pch */,
 				DD374EA21991EB7D00B8F0F8 /* LuckyPotluck-Info.plist */,
 				DD374EA31991EB7D00B8F0F8 /* InfoPlist.strings */,
 				DD374EA61991EB7D00B8F0F8 /* main.m */,
-				DD374EA81991EB7D00B8F0F8 /* LuckyPotluck-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -323,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1774898519BDFB3C0004C7C2 /* Assets.bundle in Resources */,
+				1785450F19BE0AE00087F9FC /* Default-568h@2x.png in Resources */,
 				DD374EA51991EB7D00B8F0F8 /* InfoPlist.strings in Resources */,
 				DD374ED41991EBEF00B8F0F8 /* Storyboard.storyboard in Resources */,
 			);
@@ -398,6 +449,7 @@
 				17C2659F199203E100C99970 /* Potluck.m in Sources */,
 				DD374EE31991F0A700B8F0F8 /* PLMyPartiesViewController.m in Sources */,
 				DD374EE61991F0BB00B8F0F8 /* PLMyPartyDetailViewController.m in Sources */,
+				1785451319BE0B5F0087F9FC /* ECDataStorage.m in Sources */,
 				DD374EE91991F2E000B8F0F8 /* PLPartyCell.m in Sources */,
 				DD374EEC1991F2F100B8F0F8 /* PLPartyDetailCell.m in Sources */,
 			);
@@ -508,7 +560,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LuckyPotluck/LuckyPotluck-Prefix.pch";
 				INFOPLIST_FILE = "LuckyPotluck/LuckyPotluck-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,7 +577,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LuckyPotluck/LuckyPotluck-Prefix.pch";
 				INFOPLIST_FILE = "LuckyPotluck/LuckyPotluck-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

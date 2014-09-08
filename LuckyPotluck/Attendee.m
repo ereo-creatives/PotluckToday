@@ -11,7 +11,6 @@
 
 @implementation Attendee
 
-@dynamic name;
-@dynamic food;
+@synthesize name,food;
 
 @end

@@ -11,17 +11,13 @@
 
 @implementation Potluck
 
-@dynamic name;
-@dynamic time;
-@dynamic location;
-@dynamic contact;
-
+@synthesize name, time, location, contact;
 
 - (void)awakeFromInsert
 {
     self.time = [NSDate date];
     self.location = @"My Location";
-    self.contact=@"My Contact";
+    self.contact = @"My Contact";
     self.name = @"New Party";
 }
 @end

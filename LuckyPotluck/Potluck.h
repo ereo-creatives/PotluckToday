@@ -12,9 +12,9 @@
 
 @interface Potluck : NSManagedObject
 
-@property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSDate * time;
-@property (nonatomic, retain) NSString * location;
-@property (nonatomic, retain) NSString * contact;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSDate *time;
+@property (nonatomic, retain) NSString *location;
+@property (nonatomic, retain) NSString *contact;
 
 @end
