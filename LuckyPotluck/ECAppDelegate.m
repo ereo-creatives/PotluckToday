@@ -7,6 +7,7 @@
 //
 
 #import "ECAppDelegate.h"
+#import <Firebase/Firebase.h>
 
 @implementation ECAppDelegate
 
@@ -18,6 +19,12 @@
 {
 
     // Override point for customization after application launch.
+    Firebase* myRootRef = [[Firebase alloc] initWithUrl:@"https://luckypotluck.firebaseio.com/"];
+    // Write data to Firebase
+//    [myRootRef setValue:@"Do you have data? You'll love Firebase."];
+//    [myRootRef observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
+//        NSLog(@"%@ -> %@", snapshot.name, snapshot.value);
+//    }];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

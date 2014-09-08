@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1774898519BDFB3C0004C7C2 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1774898419BDFB3C0004C7C2 /* Assets.bundle */; };
 		17C2659F199203E100C99970 /* Potluck.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C2659E199203E100C99970 /* Potluck.m */; };
-		17F7D2A81992061600483FC7 /* ECPartyStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F7D2A71992061600483FC7 /* ECPartyStore.m */; };
 		DD374E991991EB7A00B8F0F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E981991EB7A00B8F0F8 /* UIKit.framework */; };
 		DD374E9B1991EB7A00B8F0F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E9A1991EB7A00B8F0F8 /* Foundation.framework */; };
 		DD374E9D1991EB7A00B8F0F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E9C1991EB7A00B8F0F8 /* CoreGraphics.framework */; };
@@ -16,10 +16,6 @@
 		DD374EA51991EB7D00B8F0F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD374EA31991EB7D00B8F0F8 /* InfoPlist.strings */; };
 		DD374EA71991EB7D00B8F0F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EA61991EB7D00B8F0F8 /* main.m */; };
 		DD374EAB1991EB7F00B8F0F8 /* ECAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EAA1991EB7F00B8F0F8 /* ECAppDelegate.m */; };
-		DD374EAD1991EB7F00B8F0F8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DD374EAC1991EB7F00B8F0F8 /* Default.png */; };
-		DD374EAF1991EB7F00B8F0F8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD374EAE1991EB7F00B8F0F8 /* Default@2x.png */; };
-		DD374EB11991EB8000B8F0F8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD374EB01991EB8000B8F0F8 /* Default-568h@2x.png */; };
-		DD374EB41991EB8100B8F0F8 /* LuckyPotluck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD374EB21991EB8000B8F0F8 /* LuckyPotluck.xcdatamodeld */; };
 		DD374EBD1991EB8100B8F0F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E981991EB7A00B8F0F8 /* UIKit.framework */; };
 		DD374EBE1991EB8100B8F0F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E9A1991EB7A00B8F0F8 /* Foundation.framework */; };
 		DD374EBF1991EB8100B8F0F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E9E1991EB7A00B8F0F8 /* CoreData.framework */; };
@@ -34,6 +30,7 @@
 		DD374EE91991F2E000B8F0F8 /* PLPartyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EE81991F2E000B8F0F8 /* PLPartyCell.m */; };
 		DD374EEC1991F2F100B8F0F8 /* PLPartyDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD374EEB1991F2F100B8F0F8 /* PLPartyDetailCell.m */; };
 		DDD10790199222FA00F9D63A /* Attendee.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1078F199222FA00F9D63A /* Attendee.m */; };
+		DE12EC20119F4AD18F4C1CCB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2332EA85EC5E4A0BA5449DBD /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1774898419BDFB3C0004C7C2 /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
 		17C2659D199203E100C99970 /* Potluck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Potluck.h; sourceTree = "<group>"; };
 		17C2659E199203E100C99970 /* Potluck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Potluck.m; sourceTree = "<group>"; };
-		17F7D2A61992061600483FC7 /* ECPartyStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPartyStore.h; sourceTree = "<group>"; };
-		17F7D2A71992061600483FC7 /* ECPartyStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPartyStore.m; sourceTree = "<group>"; };
+		2332EA85EC5E4A0BA5449DBD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A45E7400FF54FB1BCE58F75 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		DD374E951991EB7A00B8F0F8 /* LuckyPotluck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyPotluck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD374E981991EB7A00B8F0F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD374E9A1991EB7A00B8F0F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,10 +60,6 @@
 		DD374EA81991EB7D00B8F0F8 /* LuckyPotluck-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LuckyPotluck-Prefix.pch"; sourceTree = "<group>"; };
 		DD374EA91991EB7D00B8F0F8 /* ECAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECAppDelegate.h; sourceTree = "<group>"; };
 		DD374EAA1991EB7F00B8F0F8 /* ECAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECAppDelegate.m; sourceTree = "<group>"; };
-		DD374EAC1991EB7F00B8F0F8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		DD374EAE1991EB7F00B8F0F8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		DD374EB01991EB8000B8F0F8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DD374EB31991EB8000B8F0F8 /* LuckyPotluck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LuckyPotluck.xcdatamodel; sourceTree = "<group>"; };
 		DD374EBA1991EB8100B8F0F8 /* LuckyPotluckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyPotluckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD374EC41991EB8200B8F0F8 /* LuckyPotluckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LuckyPotluckTests-Info.plist"; sourceTree = "<group>"; };
 		DD374EC61991EB8200B8F0F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -99,6 +93,7 @@
 				DD374E9B1991EB7A00B8F0F8 /* Foundation.framework in Frameworks */,
 				DD374E9D1991EB7A00B8F0F8 /* CoreGraphics.framework in Frameworks */,
 				DD374E9F1991EB7A00B8F0F8 /* CoreData.framework in Frameworks */,
+				DE12EC20119F4AD18F4C1CCB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +110,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1774898219BDFA940004C7C2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DD374ED81991F04A00B8F0F8 /* PLHomeViewController.h */,
+				DD374ED91991F04A00B8F0F8 /* PLHomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		1774898319BDFAA30004C7C2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DD374ED31991EBEF00B8F0F8 /* Storyboard.storyboard */,
+				DD374EA91991EB7D00B8F0F8 /* ECAppDelegate.h */,
+				DD374EAA1991EB7F00B8F0F8 /* ECAppDelegate.m */,
+				DD374EA11991EB7D00B8F0F8 /* Supporting Files */,
+				17A29B5B1992091E00DAE340 /* Model */,
+				17A29B5D1992093300DAE340 /* View */,
+				1774898419BDFB3C0004C7C2 /* Assets.bundle */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		17A29B5B1992091E00DAE340 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,8 +140,6 @@
 				DDD1078F199222FA00F9D63A /* Attendee.m */,
 				17C2659D199203E100C99970 /* Potluck.h */,
 				17C2659E199203E100C99970 /* Potluck.m */,
-				17A29B5E1992095500DAE340 /* Store */,
-				DD374EB21991EB8000B8F0F8 /* LuckyPotluck.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -131,8 +147,6 @@
 		17A29B5C1992092600DAE340 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DD374ED81991F04A00B8F0F8 /* PLHomeViewController.h */,
-				DD374ED91991F04A00B8F0F8 /* PLHomeViewController.m */,
 				DD374EDB1991F07B00B8F0F8 /* PLHostViewController.h */,
 				DD374EDC1991F07B00B8F0F8 /* PLHostViewController.m */,
 				DD374EDE1991F09700B8F0F8 /* PLReviewViewController.h */,
@@ -148,22 +162,12 @@
 		17A29B5D1992093300DAE340 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DD374ED31991EBEF00B8F0F8 /* Storyboard.storyboard */,
 				DD374EEA1991F2F100B8F0F8 /* PLPartyDetailCell.h */,
 				DD374EEB1991F2F100B8F0F8 /* PLPartyDetailCell.m */,
 				DD374EE71991F2DF00B8F0F8 /* PLPartyCell.h */,
 				DD374EE81991F2E000B8F0F8 /* PLPartyCell.m */,
 			);
 			name = View;
-			sourceTree = "<group>";
-		};
-		17A29B5E1992095500DAE340 /* Store */ = {
-			isa = PBXGroup;
-			children = (
-				17F7D2A61992061600483FC7 /* ECPartyStore.h */,
-				17F7D2A71992061600483FC7 /* ECPartyStore.m */,
-			);
-			name = Store;
 			sourceTree = "<group>";
 		};
 		DD374E8C1991EB7800B8F0F8 = {
@@ -173,6 +177,7 @@
 				DD374EC21991EB8100B8F0F8 /* LuckyPotluckTests */,
 				DD374E971991EB7A00B8F0F8 /* Frameworks */,
 				DD374E961991EB7A00B8F0F8 /* Products */,
+				3A45E7400FF54FB1BCE58F75 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,6 +197,7 @@
 				DD374E9A1991EB7A00B8F0F8 /* Foundation.framework */,
 				DD374E9C1991EB7A00B8F0F8 /* CoreGraphics.framework */,
 				DD374E9E1991EB7A00B8F0F8 /* CoreData.framework */,
+				2332EA85EC5E4A0BA5449DBD /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,12 +205,9 @@
 		DD374EA01991EB7A00B8F0F8 /* LuckyPotluck */ = {
 			isa = PBXGroup;
 			children = (
-				17A29B5D1992093300DAE340 /* View */,
+				1774898319BDFAA30004C7C2 /* Common */,
+				1774898219BDFA940004C7C2 /* Home */,
 				17A29B5C1992092600DAE340 /* ViewController */,
-				17A29B5B1992091E00DAE340 /* Model */,
-				DD374EA91991EB7D00B8F0F8 /* ECAppDelegate.h */,
-				DD374EAA1991EB7F00B8F0F8 /* ECAppDelegate.m */,
-				DD374EA11991EB7D00B8F0F8 /* Supporting Files */,
 			);
 			path = LuckyPotluck;
 			sourceTree = "<group>";
@@ -216,9 +219,6 @@
 				DD374EA31991EB7D00B8F0F8 /* InfoPlist.strings */,
 				DD374EA61991EB7D00B8F0F8 /* main.m */,
 				DD374EA81991EB7D00B8F0F8 /* LuckyPotluck-Prefix.pch */,
-				DD374EAC1991EB7F00B8F0F8 /* Default.png */,
-				DD374EAE1991EB7F00B8F0F8 /* Default@2x.png */,
-				DD374EB01991EB8000B8F0F8 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -249,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD374ECD1991EB8300B8F0F8 /* Build configuration list for PBXNativeTarget "LuckyPotluck" */;
 			buildPhases = (
+				450A068F35954D83944D1009 /* Check Pods Manifest.lock */,
 				DD374E911991EB7A00B8F0F8 /* Sources */,
 				DD374E921991EB7A00B8F0F8 /* Frameworks */,
 				DD374E931991EB7A00B8F0F8 /* Resources */,
+				A4FD95E091C74E56912804FF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,10 +322,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1774898519BDFB3C0004C7C2 /* Assets.bundle in Resources */,
 				DD374EA51991EB7D00B8F0F8 /* InfoPlist.strings in Resources */,
-				DD374EAD1991EB7F00B8F0F8 /* Default.png in Resources */,
-				DD374EAF1991EB7F00B8F0F8 /* Default@2x.png in Resources */,
-				DD374EB11991EB8000B8F0F8 /* Default-568h@2x.png in Resources */,
 				DD374ED41991EBEF00B8F0F8 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +339,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		450A068F35954D83944D1009 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4FD95E091C74E56912804FF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DD374EB81991EB8100B8F0F8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,12 +392,10 @@
 				DD374EA71991EB7D00B8F0F8 /* main.m in Sources */,
 				DDD10790199222FA00F9D63A /* Attendee.m in Sources */,
 				DD374EAB1991EB7F00B8F0F8 /* ECAppDelegate.m in Sources */,
-				DD374EB41991EB8100B8F0F8 /* LuckyPotluck.xcdatamodeld in Sources */,
 				DD374EDA1991F04A00B8F0F8 /* PLHomeViewController.m in Sources */,
 				DD374EDD1991F07B00B8F0F8 /* PLHostViewController.m in Sources */,
 				DD374EE01991F09700B8F0F8 /* PLReviewViewController.m in Sources */,
 				17C2659F199203E100C99970 /* Potluck.m in Sources */,
-				17F7D2A81992061600483FC7 /* ECPartyStore.m in Sources */,
 				DD374EE31991F0A700B8F0F8 /* PLMyPartiesViewController.m in Sources */,
 				DD374EE61991F0BB00B8F0F8 /* PLMyPartyDetailViewController.m in Sources */,
 				DD374EE91991F2E000B8F0F8 /* PLPartyCell.m in Sources */,
@@ -473,6 +501,7 @@
 		};
 		DD374ECE1991EB8300B8F0F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A45E7400FF54FB1BCE58F75 /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Yi Hsuan Fu (9HKH52337P)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -489,6 +518,7 @@
 		};
 		DD374ECF1991EB8300B8F0F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A45E7400FF54FB1BCE58F75 /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Yi Hsuan Fu (9HKH52337P)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -568,19 +598,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DD374EB21991EB8000B8F0F8 /* LuckyPotluck.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DD374EB31991EB8000B8F0F8 /* LuckyPotluck.xcdatamodel */,
-			);
-			currentVersion = DD374EB31991EB8000B8F0F8 /* LuckyPotluck.xcdatamodel */;
-			path = LuckyPotluck.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = DD374E8D1991EB7800B8F0F8 /* Project object */;
 }

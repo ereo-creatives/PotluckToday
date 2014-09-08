@@ -17,14 +17,17 @@ PODS:
   - AFNetworking/Serialization (2.0.3)
   - AFNetworking/UIKit (2.0.3):
     - AFNetworking/NSURLConnection
+  - Firebase (1.1.12)
   - GoogleAnalytics-iOS-SDK (3.0.8)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0.3)
+  - Firebase (~> 1.1.12)
   - GoogleAnalytics-iOS-SDK (~> 3.0.2)
 
 SPEC CHECKSUMS:
   AFNetworking: a4d0e9a64de9242986620dafd1b3cee3b413ac5c
+  Firebase: 26ca966dea982f29a4685f7fa8f596d56e5487ad
   GoogleAnalytics-iOS-SDK: a3206c68ee5f2a014ed67383d1f779072b653988
 
 COCOAPODS: 0.33.1
