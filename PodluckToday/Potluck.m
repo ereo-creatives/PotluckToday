@@ -1,6 +1,6 @@
 //
 //  Potluck.m
-//  LuckyPotluck
+//  PotluckToday
 //
 //  Created by Ryan on 8/5/14.
 //  Copyright (c) 2014 Ereo Creatives. All rights reserved.

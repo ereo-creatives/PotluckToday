@@ -19,13 +19,11 @@
 		1702F51A19BEB70A003451FE /* PLPartyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1702F4F819BEB70A003451FE /* PLPartyCell.m */; };
 		1702F51B19BEB70A003451FE /* PLPartyDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1702F4FA19BEB70A003451FE /* PLPartyDetailCell.m */; };
 		1702F51C19BEB70A003451FE /* PLReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1702F4FC19BEB70A003451FE /* PLReviewViewController.m */; };
-		1702F51D19BEB70A003451FE /* PodluckToday-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1702F4FD19BEB70A003451FE /* PodluckToday-Info.plist */; };
 		1702F51E19BEB70A003451FE /* Potluck.m in Sources */ = {isa = PBXBuildFile; fileRef = 1702F50019BEB70A003451FE /* Potluck.m */; };
 		1702F51F19BEB70A003451FE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1702F50119BEB70A003451FE /* Storyboard.storyboard */; };
 		1702F52219BEB70A003451FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1702F50719BEB70A003451FE /* InfoPlist.strings */; };
-		1702F52319BEB70A003451FE /* PodluckTodayTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1702F50919BEB70A003451FE /* PodluckTodayTests-Info.plist */; };
-		1702F52419BEB70A003451FE /* PodluckTodayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1702F50B19BEB70A003451FE /* PodluckTodayTests.m */; };
 		1702F52619BEB752003451FE /* FirebaseSimpleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1702F52519BEB752003451FE /* FirebaseSimpleLogin.framework */; };
+		1702F52E19BEB922003451FE /* PodluckToday-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1702F4FD19BEB70A003451FE /* PodluckToday-Info.plist */; };
 		1785450F19BE0AE00087F9FC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1785450E19BE0AE00087F9FC /* Default-568h@2x.png */; };
 		1785451819BEB0FB0087F9FC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785451719BEB0FB0087F9FC /* Accounts.framework */; };
 		1785451A19BEB1000087F9FC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785451919BEB1000087F9FC /* Social.framework */; };
@@ -79,9 +77,8 @@
 		1702F50119BEB70A003451FE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		1702F50819BEB70A003451FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1702F50919BEB70A003451FE /* PodluckTodayTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PodluckTodayTests-Info.plist"; sourceTree = "<group>"; };
-		1702F50A19BEB70A003451FE /* PodluckTodayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodluckTodayTests.h; sourceTree = "<group>"; };
-		1702F50B19BEB70A003451FE /* PodluckTodayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodluckTodayTests.m; sourceTree = "<group>"; };
 		1702F52519BEB752003451FE /* FirebaseSimpleLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseSimpleLogin.framework; path = PodluckToday/FirebaseSimpleLogin.framework; sourceTree = "<group>"; };
+		1702F52F19BEBA7C003451FE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1785450E19BE0AE00087F9FC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1785451519BEB0E00087F9FC /* FirebaseSimpleLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseSimpleLogin.framework; path = ../../Downloads/FirebaseSimpleLogin.framework; sourceTree = "<group>"; };
 		1785451719BEB0FB0087F9FC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -128,13 +125,11 @@
 			isa = PBXGroup;
 			children = (
 				1702F52919BEB794003451FE /* Application */,
-				1702F4E119BEB70A003451FE /* Assets.bundle */,
 				1702F52819BEB78B003451FE /* Model */,
 				1702F52D19BEB7EA003451FE /* Definition */,
 				1702F52C19BEB7C5003451FE /* Controllers */,
 				1702F52A19BEB7B3003451FE /* View */,
 				1702F52B19BEB7BD003451FE /* Review */,
-				1702F50119BEB70A003451FE /* Storyboard.storyboard */,
 				1702F52719BEB767003451FE /* Supporting Files */,
 				1702F50219BEB70A003451FE /* PodluckTodayTests */,
 			);
@@ -144,8 +139,7 @@
 		1702F50219BEB70A003451FE /* PodluckTodayTests */ = {
 			isa = PBXGroup;
 			children = (
-				1702F50A19BEB70A003451FE /* PodluckTodayTests.h */,
-				1702F50B19BEB70A003451FE /* PodluckTodayTests.m */,
+				1702F50919BEB70A003451FE /* PodluckTodayTests-Info.plist */,
 			);
 			path = PodluckTodayTests;
 			sourceTree = SOURCE_ROOT;
@@ -153,12 +147,11 @@
 		1702F52719BEB767003451FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1702F4E619BEB70A003451FE /* ECConstants.h */,
 				1702F4EE19BEB70A003451FE /* main.m */,
+				1702F4E619BEB70A003451FE /* ECConstants.h */,
 				1702F4FD19BEB70A003451FE /* PodluckToday-Info.plist */,
 				1702F4FE19BEB70A003451FE /* PodluckToday-Prefix.pch */,
 				1702F50719BEB70A003451FE /* InfoPlist.strings */,
-				1702F50919BEB70A003451FE /* PodluckTodayTests-Info.plist */,
 			);
 			name = "Supporting Files";
 			path = PodluckTodayTests;
@@ -187,6 +180,8 @@
 		1702F52A19BEB7B3003451FE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1702F4E119BEB70A003451FE /* Assets.bundle */,
+				1702F50119BEB70A003451FE /* Storyboard.storyboard */,
 				1702F4F719BEB70A003451FE /* PLPartyCell.h */,
 				1702F4F819BEB70A003451FE /* PLPartyCell.m */,
 				1702F4F919BEB70A003451FE /* PLPartyDetailCell.h */,
@@ -252,6 +247,7 @@
 		DD374E971991EB7A00B8F0F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1702F52F19BEBA7C003451FE /* XCTest.framework */,
 				1702F52519BEB752003451FE /* FirebaseSimpleLogin.framework */,
 				1785451919BEB1000087F9FC /* Social.framework */,
 				1785451719BEB0FB0087F9FC /* Accounts.framework */,
@@ -345,11 +341,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1702F52E19BEB922003451FE /* PodluckToday-Info.plist in Resources */,
 				1702F52219BEB70A003451FE /* InfoPlist.strings in Resources */,
 				1702F50E19BEB70A003451FE /* Assets.bundle in Resources */,
-				1702F52319BEB70A003451FE /* PodluckTodayTests-Info.plist in Resources */,
 				1785450F19BE0AE00087F9FC /* Default-568h@2x.png in Resources */,
-				1702F51D19BEB70A003451FE /* PodluckToday-Info.plist in Resources */,
 				1702F51F19BEB70A003451FE /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,7 +412,6 @@
 				1702F51119BEB70A003451FE /* ECDataStorage.m in Sources */,
 				1702F51B19BEB70A003451FE /* PLPartyDetailCell.m in Sources */,
 				1702F51819BEB70A003451FE /* PLMyPartiesViewController.m in Sources */,
-				1702F52419BEB70A003451FE /* PodluckTodayTests.m in Sources */,
 				1702F51A19BEB70A003451FE /* PLPartyCell.m in Sources */,
 				1702F51719BEB70A003451FE /* PLHostViewController.m in Sources */,
 				1702F51919BEB70A003451FE /* PLMyPartyDetailViewController.m in Sources */,
@@ -525,18 +519,17 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/flyworld/Downloads,
-					"$(PROJECT_DIR)/LuckyPotluck",
 					"$(PROJECT_DIR)/PodluckTodayTests",
 					"$(PROJECT_DIR)/PodluckToday",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LuckyPotluck/PodluckToday-Prefix.pch";
-				INFOPLIST_FILE = "LuckyPotluck/PodluckToday-Info.plist";
+				GCC_PREFIX_HEADER = "PodluckToday/PodluckToday-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PodluckToday/PodluckToday-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = PodluckToday;
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -549,18 +542,17 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/flyworld/Downloads,
-					"$(PROJECT_DIR)/LuckyPotluck",
 					"$(PROJECT_DIR)/PodluckTodayTests",
 					"$(PROJECT_DIR)/PodluckToday",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LuckyPotluck/PodluckToday-Prefix.pch";
-				INFOPLIST_FILE = "LuckyPotluck/PodluckToday-Info.plist";
+				GCC_PREFIX_HEADER = "PodluckToday/PodluckToday-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PodluckToday/PodluckToday-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = PodluckToday;
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -1,6 +1,6 @@
 //
 //  ECDataStorage.h
-//  LuckyPotluck
+//  PotluckToday
 //
 //  Created by Ryan on 9/8/14.
 //  Copyright (c) 2014 Ereo Creatives. All rights reserved.
