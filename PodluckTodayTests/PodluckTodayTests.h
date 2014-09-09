@@ -8,6 +8,6 @@
 
 #import <XCTest/XCTest.h>
 
-@interface LuckyPotluckTests : XCTestCase
+@interface PodluckTodayTests : XCTestCase
 
 @end

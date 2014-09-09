@@ -17,5 +17,5 @@ DerivedData
 *.hmap
 xcuserdata/*
 project.xcworkspace
-
+*.xcworkspace
 Pods/

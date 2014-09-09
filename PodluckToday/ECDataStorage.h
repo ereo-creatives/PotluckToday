@@ -16,4 +16,6 @@
 
 +(ECDataStorage *) sharedInstance;
 
+-(void) test;
+
 @end

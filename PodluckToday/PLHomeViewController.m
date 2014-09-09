@@ -7,6 +7,7 @@
 //
 
 #import "PLHomeViewController.h"
+#import "ECDataStorage.h"
 
 @interface PLHomeViewController ()
 
@@ -18,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    [[ECDataStorage sharedInstance] test];
 }
 
 - (void)didReceiveMemoryWarning

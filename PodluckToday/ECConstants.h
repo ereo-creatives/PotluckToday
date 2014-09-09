@@ -10,5 +10,8 @@
 #define LuckyPotluck_ECConstants_h
 
 #define FIREBASE_URL @"https://luckypotluck.firebaseio.com/"
+#define FIREBASE_USERS_URL @"users/"
+#define FIREBASE_EVENTS_URL @"events/"
+
 
 #endif
