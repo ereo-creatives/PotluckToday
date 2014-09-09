@@ -1,2 +1,3 @@
-LuckyPotluck
+PotluckToday
 ============
+## Easy Potluck
