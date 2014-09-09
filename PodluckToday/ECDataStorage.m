@@ -7,7 +7,6 @@
 //
 
 #import "ECDataStorage.h"
-#import <Firebase/Firebase.h>
 
 @implementation ECDataStorage
 {
@@ -32,6 +31,10 @@
         _rootref = [[Firebase alloc] initWithUrl:FIREBASE_URL];
     }
     return self;
+}
+-(Firebase *) getFirebase
+{
+    return  _rootref;
 }
 
 -(void) test

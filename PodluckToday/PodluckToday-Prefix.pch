@@ -11,5 +11,7 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "ECBlocks.h"
     #import "ECConstants.h"
+    #import "TSMessage.h"
 #endif

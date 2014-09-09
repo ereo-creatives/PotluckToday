@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ECDefaultViewController.h"
 
-@interface PLHomeViewController : UIViewController
+@interface PLHomeViewController : ECDefaultViewController
 
 @end

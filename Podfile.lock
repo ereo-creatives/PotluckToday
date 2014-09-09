@@ -17,6 +17,9 @@ PODS:
   - AFNetworking/Serialization (2.0.3)
   - AFNetworking/UIKit (2.0.3):
     - AFNetworking/NSURLConnection
+  - Bolts (1.1.2)
+  - Facebook-iOS-SDK (3.17.0):
+    - Bolts
   - Firebase (1.1.12)
   - GoogleAnalytics-iOS-SDK (3.0.8)
   - HexColors (2.2.1)
@@ -26,6 +29,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0.3)
+  - Facebook-iOS-SDK
   - Firebase
   - GoogleAnalytics-iOS-SDK
   - LBBlurredImage
@@ -33,6 +37,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: a4d0e9a64de9242986620dafd1b3cee3b413ac5c
+  Bolts: 2635e8698a630774689441047f3465d78c48d485
+  Facebook-iOS-SDK: f20274d809f112ba540842e2b6cbe50128d51b7b
   Firebase: 26ca966dea982f29a4685f7fa8f596d56e5487ad
   GoogleAnalytics-iOS-SDK: a3206c68ee5f2a014ed67383d1f779072b653988
   HexColors: 01384d2bbe8dc4ffa43c3b4135db6e976952d153

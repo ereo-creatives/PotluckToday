@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ECDefaultViewController.h"
 
-@interface PLHostViewController : UIViewController
+@interface PLHostViewController : ECDefaultViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *partyNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *timeTextField;

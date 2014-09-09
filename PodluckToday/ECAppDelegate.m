@@ -7,6 +7,7 @@
 //
 
 #import "ECAppDelegate.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @implementation ECAppDelegate
 
@@ -48,6 +49,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Saves changes in the application's managed object context before the application terminates.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+    // add any app-specific handling code here
+    return wasHandled;
 }
 
 

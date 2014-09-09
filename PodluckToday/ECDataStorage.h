@@ -6,8 +6,7 @@
 //  Copyright (c) 2014 Ereo Creatives. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
+#import <Firebase/Firebase.h>
 
 @interface ECDataStorage : NSObject
 {
@@ -15,7 +14,7 @@
 }
 
 +(ECDataStorage *) sharedInstance;
-
+-(Firebase *) getFirebase;
 -(void) test;
 
 @end
