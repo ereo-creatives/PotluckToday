@@ -8,7 +8,7 @@
 
 #import "ECAppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
-
+#import <Crashlytics/Crashlytics.h>
 @implementation ECAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -19,6 +19,7 @@
 {
 
     // Override point for customization after application launch.
+//    [Crashlytics startWithAPIKey:@"22551e33b0f08eb0e8141beb848f674bc64b4091"];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
