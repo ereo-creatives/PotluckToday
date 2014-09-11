@@ -7,6 +7,8 @@
 //
 
 #import "PLHostViewController.h"
+#import "PLReviewViewController.h"
+#import "Potluck.h"
 
 @interface PLHostViewController ()
 {
@@ -16,7 +18,6 @@
 }
 @end
 
-
 @implementation PLHostViewController
 
 @synthesize timeLabel, partyNameTextField, locationTextField, contactTextField;
@@ -24,8 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showDatePicker)];
-    tapGestureRecognizer.numberOfTapsRequired = 1;
+
     picker  = [[UIDatePicker alloc] init];
     picker.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
     picker.datePickerMode = UIDatePickerModeDateAndTime;
@@ -33,21 +33,25 @@
     pickerSize = [picker sizeThatFits:CGSizeZero];
     picker.frame = CGRectMake(0, self.view.bounds.size.height, pickerSize.width, pickerSize.height);
     picker.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:picker];
     [picker addTarget:self action:@selector(dueDateChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:picker];
 
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showDatePicker)];
     [timeLabel addGestureRecognizer:tapGestureRecognizer];
     timeLabel.userInteractionEnabled = YES;
+
     partyNameTextField.delegate = self;
     locationTextField.delegate = self;
     contactTextField.delegate = self;
 }
+
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     refTextField = textField;
     [self displayDatePicker:NO];
 
 }
+
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     [textField resignFirstResponder];
@@ -58,6 +62,7 @@
     [refTextField resignFirstResponder];
     [self displayDatePicker:YES];
 }
+
 -(void) displayDatePicker: (BOOL) show
 {
     [UIView beginAnimations:nil context:UIGraphicsGetCurrentContext()];
@@ -71,9 +76,19 @@
                               pickerSize.height);
     [UIView commitAnimations];
 }
+
 -(void) dueDateChanged:(UIDatePicker *)sender {
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"MMM dd, yyyy hh:mm a"];
     timeLabel.text = [dateFormatter stringFromDate:[sender date]];
+}
+
+#pragma mark - Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"spotDetail"]) {
+        PLReviewViewController *reviewVC = segue.destinationViewController;
+//        reviewVC.potluck = newPotluck;
+    }
 }
 @end

@@ -54,7 +54,7 @@
 		1702F4E319BEB70A003451FE /* Attendee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attendee.m; sourceTree = "<group>"; };
 		1702F4E419BEB70A003451FE /* ECAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAppDelegate.h; sourceTree = "<group>"; };
 		1702F4E519BEB70A003451FE /* ECAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAppDelegate.m; sourceTree = "<group>"; };
-		1702F4E619BEB70A003451FE /* ECConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECConstants.h; path = ../PodluckToday/ECConstants.h; sourceTree = "<group>"; };
+		1702F4E619BEB70A003451FE /* ECConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECConstants.h; sourceTree = "<group>"; };
 		1702F4E719BEB70A003451FE /* ECDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECDataStorage.h; sourceTree = "<group>"; };
 		1702F4E819BEB70A003451FE /* ECDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECDataStorage.m; sourceTree = "<group>"; };
 		1702F4EE19BEB70A003451FE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../PodluckToday/main.m; sourceTree = "<group>"; };
@@ -66,10 +66,10 @@
 		1702F4F419BEB70A003451FE /* PLMyPartiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLMyPartiesViewController.m; path = PodluckToday/PLMyPartiesViewController.m; sourceTree = "<group>"; };
 		1702F4F519BEB70A003451FE /* PLMyPartyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLMyPartyDetailViewController.h; path = PodluckToday/PLMyPartyDetailViewController.h; sourceTree = "<group>"; };
 		1702F4F619BEB70A003451FE /* PLMyPartyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLMyPartyDetailViewController.m; path = PodluckToday/PLMyPartyDetailViewController.m; sourceTree = "<group>"; };
-		1702F4F719BEB70A003451FE /* PLPartyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPartyCell.h; sourceTree = "<group>"; };
-		1702F4F819BEB70A003451FE /* PLPartyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPartyCell.m; sourceTree = "<group>"; };
-		1702F4F919BEB70A003451FE /* PLPartyDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPartyDetailCell.h; sourceTree = "<group>"; };
-		1702F4FA19BEB70A003451FE /* PLPartyDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPartyDetailCell.m; sourceTree = "<group>"; };
+		1702F4F719BEB70A003451FE /* PLPartyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLPartyCell.h; path = PodluckToday/PLPartyCell.h; sourceTree = "<group>"; };
+		1702F4F819BEB70A003451FE /* PLPartyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLPartyCell.m; path = PodluckToday/PLPartyCell.m; sourceTree = "<group>"; };
+		1702F4F919BEB70A003451FE /* PLPartyDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLPartyDetailCell.h; path = PodluckToday/PLPartyDetailCell.h; sourceTree = "<group>"; };
+		1702F4FA19BEB70A003451FE /* PLPartyDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLPartyDetailCell.m; path = PodluckToday/PLPartyDetailCell.m; sourceTree = "<group>"; };
 		1702F4FB19BEB70A003451FE /* PLReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLReviewViewController.h; sourceTree = "<group>"; };
 		1702F4FC19BEB70A003451FE /* PLReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLReviewViewController.m; sourceTree = "<group>"; };
 		1702F4FD19BEB70A003451FE /* PodluckToday-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "PodluckToday-Info.plist"; path = "../PodluckToday/PodluckToday-Info.plist"; sourceTree = "<group>"; };
@@ -137,9 +137,8 @@
 				1702F52819BEB78B003451FE /* Model */,
 				1702F52D19BEB7EA003451FE /* Definition */,
 				17F5665019BED36300DE577F /* Manager */,
-				1702F52C19BEB7C5003451FE /* Controllers */,
+				1702F52C19BEB7C5003451FE /* ViewControllers */,
 				1702F52A19BEB7B3003451FE /* View */,
-				1702F52B19BEB7BD003451FE /* Review */,
 				1702F52719BEB767003451FE /* Supporting Files */,
 				1702F50219BEB70A003451FE /* PodluckTodayTests */,
 				17F5664B19BEC22C00DE577F /* Images.xcassets */,
@@ -159,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				1702F4EE19BEB70A003451FE /* main.m */,
-				1702F4E619BEB70A003451FE /* ECConstants.h */,
 				1702F4FD19BEB70A003451FE /* PodluckToday-Info.plist */,
 				1702F4FE19BEB70A003451FE /* PodluckToday-Prefix.pch */,
 				1702F50719BEB70A003451FE /* InfoPlist.strings */,
@@ -193,10 +191,6 @@
 			children = (
 				1702F4E119BEB70A003451FE /* Assets.bundle */,
 				1702F50119BEB70A003451FE /* Storyboard.storyboard */,
-				1702F4F719BEB70A003451FE /* PLPartyCell.h */,
-				1702F4F819BEB70A003451FE /* PLPartyCell.m */,
-				1702F4F919BEB70A003451FE /* PLPartyDetailCell.h */,
-				1702F4FA19BEB70A003451FE /* PLPartyDetailCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -208,23 +202,21 @@
 				1702F4FC19BEB70A003451FE /* PLReviewViewController.m */,
 			);
 			name = Review;
+			path = PodluckToday;
 			sourceTree = "<group>";
 		};
-		1702F52C19BEB7C5003451FE /* Controllers */ = {
+		1702F52C19BEB7C5003451FE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				17F5664D19BED1B800DE577F /* ECDefaultViewController.h */,
 				17F5664E19BED1B800DE577F /* ECDefaultViewController.m */,
-				1702F4EF19BEB70A003451FE /* PLHomeViewController.h */,
-				1702F4F019BEB70A003451FE /* PLHomeViewController.m */,
-				1702F4F119BEB70A003451FE /* PLHostViewController.h */,
-				1702F4F219BEB70A003451FE /* PLHostViewController.m */,
-				1702F4F319BEB70A003451FE /* PLMyPartiesViewController.h */,
-				1702F4F419BEB70A003451FE /* PLMyPartiesViewController.m */,
-				1702F4F519BEB70A003451FE /* PLMyPartyDetailViewController.h */,
-				1702F4F619BEB70A003451FE /* PLMyPartyDetailViewController.m */,
+				1702F52B19BEB7BD003451FE /* Review */,
+				1741B53E19C16F57001ECAF3 /* Home */,
+				1741B53F19C16F5C001ECAF3 /* Host */,
+				1741B54019C16F65001ECAF3 /* MyParty */,
+				1741B54119C16F6E001ECAF3 /* MyPartyDetail */,
 			);
-			name = Controllers;
+			name = ViewControllers;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -232,10 +224,51 @@
 			isa = PBXGroup;
 			children = (
 				17F5665419BED61800DE577F /* ECBlocks.h */,
+				1702F4E619BEB70A003451FE /* ECConstants.h */,
 				1702F4E719BEB70A003451FE /* ECDataStorage.h */,
 				1702F4E819BEB70A003451FE /* ECDataStorage.m */,
 			);
 			name = Definition;
+			sourceTree = "<group>";
+		};
+		1741B53E19C16F57001ECAF3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1702F4EF19BEB70A003451FE /* PLHomeViewController.h */,
+				1702F4F019BEB70A003451FE /* PLHomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		1741B53F19C16F5C001ECAF3 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				1702F4F119BEB70A003451FE /* PLHostViewController.h */,
+				1702F4F219BEB70A003451FE /* PLHostViewController.m */,
+			);
+			name = Host;
+			sourceTree = "<group>";
+		};
+		1741B54019C16F65001ECAF3 /* MyParty */ = {
+			isa = PBXGroup;
+			children = (
+				1702F4F719BEB70A003451FE /* PLPartyCell.h */,
+				1702F4F819BEB70A003451FE /* PLPartyCell.m */,
+				1702F4F319BEB70A003451FE /* PLMyPartiesViewController.h */,
+				1702F4F419BEB70A003451FE /* PLMyPartiesViewController.m */,
+			);
+			name = MyParty;
+			sourceTree = "<group>";
+		};
+		1741B54119C16F6E001ECAF3 /* MyPartyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1702F4F919BEB70A003451FE /* PLPartyDetailCell.h */,
+				1702F4FA19BEB70A003451FE /* PLPartyDetailCell.m */,
+				1702F4F519BEB70A003451FE /* PLMyPartyDetailViewController.h */,
+				1702F4F619BEB70A003451FE /* PLMyPartyDetailViewController.m */,
+			);
+			name = MyPartyDetail;
 			sourceTree = "<group>";
 		};
 		17F5665019BED36300DE577F /* Manager */ = {

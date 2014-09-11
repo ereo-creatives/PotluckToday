@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PLReviewViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UILabel *partyNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *partyTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *partyAddressLabel;
