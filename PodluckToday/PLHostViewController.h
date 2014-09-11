@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "ECDefaultViewController.h"
 
-@interface PLHostViewController : ECDefaultViewController
+@interface PLHostViewController : ECDefaultViewController<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *partyNameTextField;
-@property (weak, nonatomic) IBOutlet UITextField *timeTextField;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UITextField *locationTextField;
 @property (weak, nonatomic) IBOutlet UITextField *contactTextField;
+
 
 @end

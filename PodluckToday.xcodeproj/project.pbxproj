@@ -23,6 +23,7 @@
 		1702F51F19BEB70A003451FE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1702F50119BEB70A003451FE /* Storyboard.storyboard */; };
 		1702F52219BEB70A003451FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1702F50719BEB70A003451FE /* InfoPlist.strings */; };
 		1702F52619BEB752003451FE /* FirebaseSimpleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1702F52519BEB752003451FE /* FirebaseSimpleLogin.framework */; };
+		174AD35819C15B5D00071EB9 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174AD35719C15B5D00071EB9 /* Crashlytics.framework */; };
 		1785451819BEB0FB0087F9FC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785451719BEB0FB0087F9FC /* Accounts.framework */; };
 		1785451A19BEB1000087F9FC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785451919BEB1000087F9FC /* Social.framework */; };
 		17F5664C19BEC22C00DE577F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F5664B19BEC22C00DE577F /* Images.xcassets */; };
@@ -80,6 +81,7 @@
 		1702F50919BEB70A003451FE /* PodluckTodayTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PodluckTodayTests-Info.plist"; sourceTree = "<group>"; };
 		1702F52519BEB752003451FE /* FirebaseSimpleLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseSimpleLogin.framework; path = PodluckToday/FirebaseSimpleLogin.framework; sourceTree = "<group>"; };
 		1702F52F19BEBA7C003451FE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		174AD35719C15B5D00071EB9 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		1785451519BEB0E00087F9FC /* FirebaseSimpleLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseSimpleLogin.framework; path = ../../Downloads/FirebaseSimpleLogin.framework; sourceTree = "<group>"; };
 		1785451719BEB0FB0087F9FC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1785451919BEB1000087F9FC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -106,6 +108,7 @@
 			files = (
 				DD374E991991EB7A00B8F0F8 /* UIKit.framework in Frameworks */,
 				DD374E9B1991EB7A00B8F0F8 /* Foundation.framework in Frameworks */,
+				174AD35819C15B5D00071EB9 /* Crashlytics.framework in Frameworks */,
 				DD374E9D1991EB7A00B8F0F8 /* CoreGraphics.framework in Frameworks */,
 				1785451819BEB0FB0087F9FC /* Accounts.framework in Frameworks */,
 				1702F52619BEB752003451FE /* FirebaseSimpleLogin.framework in Frameworks */,
@@ -266,6 +269,7 @@
 		DD374E971991EB7A00B8F0F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				174AD35719C15B5D00071EB9 /* Crashlytics.framework */,
 				1702F52F19BEBA7C003451FE /* XCTest.framework */,
 				1702F52519BEB752003451FE /* FirebaseSimpleLogin.framework */,
 				1785451919BEB1000087F9FC /* Social.framework */,
@@ -288,6 +292,7 @@
 			buildConfigurationList = DD374ECD1991EB8300B8F0F8 /* Build configuration list for PBXNativeTarget "PodluckToday" */;
 			buildPhases = (
 				450A068F35954D83944D1009 /* Check Pods Manifest.lock */,
+				174AD35619C15B2A00071EB9 /* ShellScript */,
 				DD374E911991EB7A00B8F0F8 /* Sources */,
 				DD374E921991EB7A00B8F0F8 /* Frameworks */,
 				DD374E931991EB7A00B8F0F8 /* Resources */,
@@ -377,6 +382,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		174AD35619C15B2A00071EB9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 22551e33b0f08eb0e8141beb848f674bc64b4091 797e4d38e9a58f82c271baab8b9632b66fb953ea39e59df4d1a616765a4ccf1c";
+		};
 		450A068F35954D83944D1009 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -544,6 +562,7 @@
 					"$(PROJECT_DIR)/PodluckTodayTests",
 					"$(PROJECT_DIR)/PodluckToday",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PodluckToday/PodluckToday-Prefix.pch";
@@ -569,6 +588,7 @@
 					"$(PROJECT_DIR)/PodluckTodayTests",
 					"$(PROJECT_DIR)/PodluckToday",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PodluckToday/PodluckToday-Prefix.pch";

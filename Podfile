@@ -5,3 +5,4 @@ pod 'GoogleAnalytics-iOS-SDK'
 pod 'Firebase'
 pod "TSMessages"
 pod "LBBlurredImage"
+pod "Masonry"

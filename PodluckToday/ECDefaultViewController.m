@@ -7,6 +7,7 @@
 //
 
 #import "ECDefaultViewController.h"
+#import <Masonry/Masonry.h>
 
 @interface ECDefaultViewController ()
 

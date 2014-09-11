@@ -23,7 +23,6 @@
 
 + (ECUserManager *)sharedInstance
 {
-    //  Static local predicate must be initialized to 0
     static ECUserManager *sharedInstance = nil;
     static dispatch_once_t onceToken = 0;
     dispatch_once(&onceToken, ^{
@@ -80,7 +79,6 @@
                     [userFirebase updateChildValues:oldUser];
 
                 }
-                 = user;
                 userCompletionBlock(error, user);
                 [userFirebase removeAllObservers];
             }];

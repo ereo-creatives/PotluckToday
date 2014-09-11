@@ -9,30 +9,71 @@
 #import "PLHostViewController.h"
 
 @interface PLHostViewController ()
-
+{
+    UITextField *refTextField;
+    UIDatePicker* picker;
+    CGSize pickerSize;
+}
 @end
+
 
 @implementation PLHostViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@synthesize timeLabel, partyNameTextField, locationTextField, contactTextField;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showDatePicker)];
+    tapGestureRecognizer.numberOfTapsRequired = 1;
+    picker  = [[UIDatePicker alloc] init];
+    picker.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
+    picker.datePickerMode = UIDatePickerModeDateAndTime;
+    picker.minuteInterval = 30;
+    pickerSize = [picker sizeThatFits:CGSizeZero];
+    picker.frame = CGRectMake(0, self.view.bounds.size.height, pickerSize.width, pickerSize.height);
+    picker.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:picker];
+    [picker addTarget:self action:@selector(dueDateChanged:) forControlEvents:UIControlEventValueChanged];
 
-- (void)didReceiveMemoryWarning
+    [timeLabel addGestureRecognizer:tapGestureRecognizer];
+    timeLabel.userInteractionEnabled = YES;
+    partyNameTextField.delegate = self;
+    locationTextField.delegate = self;
+    contactTextField.delegate = self;
+}
+- (void)textFieldDidBeginEditing:(UITextField *)textField
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    refTextField = textField;
+    [self displayDatePicker:NO];
+
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [textField resignFirstResponder];
 }
 
+-(void) showDatePicker
+{
+    [refTextField resignFirstResponder];
+    [self displayDatePicker:YES];
+}
+-(void) displayDatePicker: (BOOL) show
+{
+    [UIView beginAnimations:nil context:UIGraphicsGetCurrentContext()];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    [UIView setAnimationDuration:0.6];
+    [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
+    picker.frame = CGRectMake(0, show ?
+                                self.view.bounds.size.height - pickerSize.height :
+                                self.view.bounds.size.height,
+                              pickerSize.width,
+                              pickerSize.height);
+    [UIView commitAnimations];
+}
+-(void) dueDateChanged:(UIDatePicker *)sender {
+    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MMM dd, yyyy hh:mm a"];
+    timeLabel.text = [dateFormatter stringFromDate:[sender date]];
+}
 @end
