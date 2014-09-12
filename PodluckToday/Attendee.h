@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import <Mantle/Mantle.h>
 
-
-@interface Attendee : NSManagedObject
+@interface Attendee : MTLModel
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * food;

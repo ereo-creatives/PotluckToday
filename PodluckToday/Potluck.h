@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import <Mantle/Mantle.h>
 
-
-@interface Potluck : NSManagedObject
+@interface Potluck : MTLModel
 
 @property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSDate *time;
 @property (nonatomic, retain) NSString *location;
 @property (nonatomic, retain) NSString *contact;
+@property (nonatomic, retain) NSDate *time;
+@property (nonatomic) NSDateFormatter* dateFormatter;
+
+-(void) setPartyTime:(NSString *) dateString;
+-(NSString *) getPartyTime;
 
 @end

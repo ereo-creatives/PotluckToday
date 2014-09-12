@@ -141,7 +141,6 @@
 				1702F52A19BEB7B3003451FE /* View */,
 				1702F52719BEB767003451FE /* Supporting Files */,
 				1702F50219BEB70A003451FE /* PodluckTodayTests */,
-				17F5664B19BEC22C00DE577F /* Images.xcassets */,
 			);
 			path = PodluckToday;
 			sourceTree = "<group>";
@@ -189,6 +188,7 @@
 		1702F52A19BEB7B3003451FE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				17F5664B19BEC22C00DE577F /* Images.xcassets */,
 				1702F4E119BEB70A003451FE /* Assets.bundle */,
 				1702F50119BEB70A003451FE /* Storyboard.storyboard */,
 			);

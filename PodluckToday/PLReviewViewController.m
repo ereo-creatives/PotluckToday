@@ -10,20 +10,23 @@
 
 @interface PLReviewViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *partyNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *partyTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *partyAddressLabel;
+@property (weak, nonatomic) IBOutlet UILabel *contactLabel;
+
 @end
 
 @implementation PLReviewViewController
+@synthesize potluck = _potluck;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    _partyNameLabel.text = _potluck.name;
+    _partyAddressLabel.text = _potluck.location;
+    _contactLabel.text = _potluck.contact;
+    _partyTimeLabel.text = [_potluck getPartyTime];
 }
 
 @end

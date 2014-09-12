@@ -15,7 +15,14 @@
     UITextField *refTextField;
     UIDatePicker* picker;
     CGSize pickerSize;
+    Potluck *newPotluck;
 }
+
+@property (weak, nonatomic) IBOutlet UITextField *partyNameTextField;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UITextField *locationTextField;
+@property (weak, nonatomic) IBOutlet UITextField *contactTextField;
+
 @end
 
 @implementation PLHostViewController
@@ -43,6 +50,7 @@
     partyNameTextField.delegate = self;
     locationTextField.delegate = self;
     contactTextField.delegate = self;
+    newPotluck = [Potluck new];
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
@@ -78,17 +86,20 @@
 }
 
 -(void) dueDateChanged:(UIDatePicker *)sender {
-    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MMM dd, yyyy hh:mm a"];
-    timeLabel.text = [dateFormatter stringFromDate:[sender date]];
+    newPotluck.time = [sender date];
+    timeLabel.text = [newPotluck getPartyTime];
 }
 
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if([[segue identifier] isEqualToString:@"spotDetail"]) {
+
+    newPotluck.name = partyNameTextField.text;
+    newPotluck.location = locationTextField.text;
+    newPotluck.contact = contactTextField.text;
+    if([[segue identifier] isEqualToString:@"partyDetail"]) {
         PLReviewViewController *reviewVC = segue.destinationViewController;
-//        reviewVC.potluck = newPotluck;
+        reviewVC.potluck = newPotluck;
     }
 }
 @end

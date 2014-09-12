@@ -7,12 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Potluck.h"
 
 @interface PLReviewViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *partyNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *partyTimeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *partyAddressLabel;
-@property (weak, nonatomic) IBOutlet UILabel *contactLabel;
+@property (nonatomic) Potluck *potluck;
 
 @end

@@ -6,3 +6,4 @@ pod 'Firebase'
 pod "TSMessages"
 pod "LBBlurredImage"
 pod "Masonry"
+pod "Mantle"

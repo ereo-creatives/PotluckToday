@@ -11,10 +11,4 @@
 
 @interface PLHostViewController : ECDefaultViewController<UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextField *partyNameTextField;
-@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
-@property (weak, nonatomic) IBOutlet UITextField *locationTextField;
-@property (weak, nonatomic) IBOutlet UITextField *contactTextField;
-
-
 @end

@@ -10,14 +10,27 @@
 
 
 @implementation Potluck
+{
+    
+}
 
 @synthesize name, time, location, contact;
 
-- (void)awakeFromInsert
+- (instancetype)init;
 {
-    self.time = [NSDate date];
-    self.location = @"My Location";
-    self.contact = @"My Contact";
-    self.name = @"New Party";
+    Potluck *potluck = [super init];
+    potluck.dateFormatter = [[NSDateFormatter alloc] init];
+    [potluck.dateFormatter setDateFormat:@"MMM dd, yyyy hh:mm a"];
+    return self;
 }
+-(void) setPartyTime:(NSString *) dateString
+{
+    time = [_dateFormatter dateFromString:dateString];
+}
+
+-(NSString *) getPartyTime
+{
+    return [_dateFormatter stringFromDate:time];
+}
+
 @end

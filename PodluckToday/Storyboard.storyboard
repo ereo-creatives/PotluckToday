@@ -297,7 +297,7 @@
                     <navigationItem key="navigationItem" title="Host A Party" id="9LB-WF-bSY">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="Rb1-QV-vyp">
                             <connections>
-                                <segue destination="Cub-23-IRR" kind="push" id="upE-qj-StW"/>
+                                <segue destination="Cub-23-IRR" kind="push" identifier="partyDetail" id="upE-qj-StW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -312,7 +312,7 @@
             </objects>
             <point key="canvasLocation" x="1110" y="-371"/>
         </scene>
-        <!--Review View Controller - Review Your Party Info-->
+        <!--Review View Controller - Review Party-->
         <scene sceneID="2a5-lc-DrO">
             <objects>
                 <viewController id="Cub-23-IRR" customClass="PLReviewViewController" sceneMemberID="viewController">
@@ -324,61 +324,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Party Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGk-fe-Zsw">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGk-fe-Zsw">
                                 <rect key="frame" x="28" y="89" width="264" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="264" id="Tsu-W4-fcb"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Party Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHk-07-xQO">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHk-07-xQO">
                                 <rect key="frame" x="28" y="139" width="264" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Party Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibJ-Hc-0SD">
-                                <rect key="frame" x="28" y="182" width="264" height="74"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="zAY-PV-FWM"/>
-                                </constraints>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibJ-Hc-0SD">
+                                <rect key="frame" x="28" y="199" width="264" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your contact" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqU-1z-Deb">
-                                <rect key="frame" x="28" y="259" width="264" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Contact" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqU-1z-Deb">
+                                <rect key="frame" x="28" y="254" width="264" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxP-RY-VPa">
-                                <rect key="frame" x="104" y="508" width="113" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxP-RY-VPa">
+                                <rect key="frame" x="80" y="512" width="160" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Finish and share">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="bqU-1z-Deb" firstAttribute="leading" secondItem="ibJ-Hc-0SD" secondAttribute="leading" id="0lY-Ok-Mvm"/>
-                            <constraint firstItem="GxP-RY-VPa" firstAttribute="centerX" secondItem="V3M-Eb-spx" secondAttribute="centerX" id="CNn-oM-Oj4"/>
-                            <constraint firstItem="bqU-1z-Deb" firstAttribute="top" secondItem="V3M-Eb-spx" secondAttribute="top" constant="259" id="Kru-qQ-juP"/>
-                            <constraint firstItem="MHk-07-xQO" firstAttribute="leading" secondItem="tGk-fe-Zsw" secondAttribute="leading" id="O2m-le-TvZ"/>
-                            <constraint firstItem="ibJ-Hc-0SD" firstAttribute="leading" secondItem="MHk-07-xQO" secondAttribute="leading" id="OeW-EE-WC2"/>
-                            <constraint firstAttribute="trailing" secondItem="tGk-fe-Zsw" secondAttribute="trailing" constant="28" id="QeC-Uy-28P"/>
-                            <constraint firstItem="MHk-07-xQO" firstAttribute="top" secondItem="V3M-Eb-spx" secondAttribute="top" constant="139" id="RaW-hC-KmG"/>
-                            <constraint firstAttribute="trailing" secondItem="bqU-1z-Deb" secondAttribute="trailing" constant="28" id="c9f-b4-D3Z"/>
-                            <constraint firstAttribute="trailing" secondItem="ibJ-Hc-0SD" secondAttribute="trailing" constant="28" id="dVF-05-rrW"/>
-                            <constraint firstAttribute="bottom" secondItem="GxP-RY-VPa" secondAttribute="bottom" constant="30" id="gZq-ad-36e"/>
-                            <constraint firstItem="tGk-fe-Zsw" firstAttribute="top" secondItem="V3M-Eb-spx" secondAttribute="top" constant="89" id="j4D-2A-qMO"/>
-                            <constraint firstAttribute="trailing" secondItem="MHk-07-xQO" secondAttribute="trailing" constant="28" id="rwx-9v-D1B"/>
-                            <constraint firstItem="ibJ-Hc-0SD" firstAttribute="top" secondItem="V3M-Eb-spx" secondAttribute="top" constant="182" id="xd0-NF-JkH"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Review Your Party Info" id="LV5-N9-kSi"/>
+                    <navigationItem key="navigationItem" title="Review Party" id="LV5-N9-kSi"/>
                     <connections>
                         <outlet property="contactLabel" destination="bqU-1z-Deb" id="83t-GZ-QP3"/>
                         <outlet property="partyAddressLabel" destination="ibJ-Hc-0SD" id="Y26-sH-yx8"/>
