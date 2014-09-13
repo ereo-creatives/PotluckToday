@@ -50,7 +50,9 @@
     partyNameTextField.delegate = self;
     locationTextField.delegate = self;
     contactTextField.delegate = self;
+        
     newPotluck = [Potluck new];
+    newPotluck.time = [NSDate date];
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
