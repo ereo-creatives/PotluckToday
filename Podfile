@@ -1,5 +1,5 @@
-platform :ios, '7.0'
-pod 'AFNetworking', '~> 2.0.3'
+platform :ios, '8.0'
+pod 'AFNetworking'
 pod 'Facebook-iOS-SDK'
 pod 'GoogleAnalytics-iOS-SDK'
 pod 'Firebase'
