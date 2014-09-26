@@ -320,6 +320,11 @@
 				TargetAttributes = {
 					DD374E941991EB7A00B8F0F8 = {
 						DevelopmentTeam = B62Z367ZB7;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
