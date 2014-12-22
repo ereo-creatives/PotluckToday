@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		173D9EAB19C4DC1B003A8555 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 173D9E8719C4DC1B003A8555 /* Assets.bundle */; };
 		173D9EAC19C4DC1B003A8555 /* ECAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 173D9E8919C4DC1B003A8555 /* ECAppDelegate.m */; };
-		173D9EAD19C4DC1B003A8555 /* ECDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 173D9E8D19C4DC1B003A8555 /* ECDataStorage.m */; };
 		173D9EAE19C4DC1B003A8555 /* ECDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173D9E8F19C4DC1B003A8555 /* ECDefaultViewController.m */; };
-		173D9EAF19C4DC1B003A8555 /* ECUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 173D9E9119C4DC1B003A8555 /* ECUserManager.m */; };
-		173D9EB019C4DC1B003A8555 /* FirebaseSimpleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173D9E9219C4DC1B003A8555 /* FirebaseSimpleLogin.framework */; };
 		173D9EB119C4DC1B003A8555 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173D9E9319C4DC1B003A8555 /* Images.xcassets */; };
 		173D9EB319C4DC1B003A8555 /* Attendee.m in Sources */ = {isa = PBXBuildFile; fileRef = 173D9E9719C4DC1B003A8555 /* Attendee.m */; };
 		173D9EB419C4DC1B003A8555 /* Potluck.m in Sources */ = {isa = PBXBuildFile; fileRef = 173D9E9919C4DC1B003A8555 /* Potluck.m */; };
@@ -27,9 +24,9 @@
 		173D9EC219C4DC24003A8555 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 173D9EBF19C4DC24003A8555 /* InfoPlist.strings */; };
 		173D9EC319C4DC24003A8555 /* PotluckTodayTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 173D9EC119C4DC24003A8555 /* PotluckTodayTests-Info.plist */; };
 		173D9ECB19C4DCA4003A8555 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 173D9EC819C4DCA4003A8555 /* main.m */; };
-		174AD35819C15B5D00071EB9 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174AD35719C15B5D00071EB9 /* Crashlytics.framework */; };
 		1785451819BEB0FB0087F9FC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785451719BEB0FB0087F9FC /* Accounts.framework */; };
 		1785451A19BEB1000087F9FC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785451919BEB1000087F9FC /* Social.framework */; };
+		17FE78411A48867200B412FB /* ECUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17FE78401A48867200B412FB /* ECUserManager.m */; };
 		DD374E991991EB7A00B8F0F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E981991EB7A00B8F0F8 /* UIKit.framework */; };
 		DD374E9B1991EB7A00B8F0F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E9A1991EB7A00B8F0F8 /* Foundation.framework */; };
 		DD374E9D1991EB7A00B8F0F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E9C1991EB7A00B8F0F8 /* CoreGraphics.framework */; };
@@ -50,19 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1702F52F19BEBA7C003451FE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		173D9E8719C4DC1B003A8555 /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
 		173D9E8819C4DC1B003A8555 /* ECAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAppDelegate.h; sourceTree = "<group>"; };
 		173D9E8919C4DC1B003A8555 /* ECAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAppDelegate.m; sourceTree = "<group>"; };
 		173D9E8A19C4DC1B003A8555 /* ECBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECBlocks.h; sourceTree = "<group>"; };
 		173D9E8B19C4DC1B003A8555 /* ECConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECConstants.h; sourceTree = "<group>"; };
-		173D9E8C19C4DC1B003A8555 /* ECDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECDataStorage.h; sourceTree = "<group>"; };
-		173D9E8D19C4DC1B003A8555 /* ECDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECDataStorage.m; sourceTree = "<group>"; };
 		173D9E8E19C4DC1B003A8555 /* ECDefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECDefaultViewController.h; sourceTree = "<group>"; };
 		173D9E8F19C4DC1B003A8555 /* ECDefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECDefaultViewController.m; sourceTree = "<group>"; };
-		173D9E9019C4DC1B003A8555 /* ECUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECUserManager.h; sourceTree = "<group>"; };
-		173D9E9119C4DC1B003A8555 /* ECUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECUserManager.m; sourceTree = "<group>"; };
-		173D9E9219C4DC1B003A8555 /* FirebaseSimpleLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseSimpleLogin.framework; path = PotluckToday/FirebaseSimpleLogin.framework; sourceTree = "<group>"; };
 		173D9E9319C4DC1B003A8555 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		173D9E9619C4DC1B003A8555 /* Attendee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attendee.h; sourceTree = "<group>"; };
 		173D9E9719C4DC1B003A8555 /* Attendee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attendee.m; sourceTree = "<group>"; };
@@ -88,11 +79,13 @@
 		173D9EC519C4DCA4003A8555 /* PotluckToday-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PotluckToday-Info.plist"; sourceTree = "<group>"; };
 		173D9EC619C4DCA4003A8555 /* PotluckToday-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PotluckToday-Prefix.pch"; sourceTree = "<group>"; };
 		173D9EC819C4DCA4003A8555 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		174AD35719C15B5D00071EB9 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		1785451719BEB0FB0087F9FC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1785451919BEB1000087F9FC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		17FE783F1A48867200B412FB /* ECUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECUserManager.h; sourceTree = "<group>"; };
+		17FE78401A48867200B412FB /* ECUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECUserManager.m; sourceTree = "<group>"; };
 		2332EA85EC5E4A0BA5449DBD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A45E7400FF54FB1BCE58F75 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		517C1F85BDB70C76215643DE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		98DC3FA7B728B6E2641BD5D2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DD374E951991EB7A00B8F0F8 /* PotluckToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PotluckToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD374E981991EB7A00B8F0F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD374E9A1991EB7A00B8F0F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,11 +101,9 @@
 			files = (
 				DD374E991991EB7A00B8F0F8 /* UIKit.framework in Frameworks */,
 				DD374E9B1991EB7A00B8F0F8 /* Foundation.framework in Frameworks */,
-				174AD35819C15B5D00071EB9 /* Crashlytics.framework in Frameworks */,
 				DD374E9D1991EB7A00B8F0F8 /* CoreGraphics.framework in Frameworks */,
 				1785451819BEB0FB0087F9FC /* Accounts.framework in Frameworks */,
 				1785451A19BEB1000087F9FC /* Social.framework in Frameworks */,
-				173D9EB019C4DC1B003A8555 /* FirebaseSimpleLogin.framework in Frameworks */,
 				DE12EC20119F4AD18F4C1CCB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +172,9 @@
 			children = (
 				173D9E8819C4DC1B003A8555 /* ECAppDelegate.h */,
 				173D9E8919C4DC1B003A8555 /* ECAppDelegate.m */,
+				173D9E8E19C4DC1B003A8555 /* ECDefaultViewController.h */,
+				173D9E8F19C4DC1B003A8555 /* ECDefaultViewController.m */,
+				17FE78421A4886CF00B412FB /* Home */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -190,8 +184,6 @@
 			children = (
 				173D9E8A19C4DC1B003A8555 /* ECBlocks.h */,
 				173D9E8B19C4DC1B003A8555 /* ECConstants.h */,
-				173D9E8C19C4DC1B003A8555 /* ECDataStorage.h */,
-				173D9E8D19C4DC1B003A8555 /* ECDataStorage.m */,
 			);
 			name = Definitions;
 			sourceTree = "<group>";
@@ -199,10 +191,6 @@
 		173D9ECE19C4DCF8003A8555 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				173D9E8E19C4DC1B003A8555 /* ECDefaultViewController.h */,
-				173D9E8F19C4DC1B003A8555 /* ECDefaultViewController.m */,
-				173D9E9A19C4DC1B003A8555 /* PLHomeViewController.h */,
-				173D9E9B19C4DC1B003A8555 /* PLHomeViewController.m */,
 				173D9E9C19C4DC1B003A8555 /* PLHostViewController.h */,
 				173D9E9D19C4DC1B003A8555 /* PLHostViewController.m */,
 				173D9E9E19C4DC1B003A8555 /* PLMyPartiesViewController.h */,
@@ -222,10 +210,28 @@
 		173D9ECF19C4DD0E003A8555 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				173D9E9019C4DC1B003A8555 /* ECUserManager.h */,
-				173D9E9119C4DC1B003A8555 /* ECUserManager.m */,
+				17FE783F1A48867200B412FB /* ECUserManager.h */,
+				17FE78401A48867200B412FB /* ECUserManager.m */,
 			);
 			name = Manager;
+			sourceTree = "<group>";
+		};
+		17FE78421A4886CF00B412FB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				173D9E9A19C4DC1B003A8555 /* PLHomeViewController.h */,
+				173D9E9B19C4DC1B003A8555 /* PLHomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		948204199B4B3126C90AEF1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98DC3FA7B728B6E2641BD5D2 /* Pods.debug.xcconfig */,
+				517C1F85BDB70C76215643DE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		DD374E8C1991EB7800B8F0F8 = {
@@ -235,7 +241,7 @@
 				173D9EBE19C4DC24003A8555 /* PotluckTodayTests */,
 				DD374E971991EB7A00B8F0F8 /* Frameworks */,
 				DD374E961991EB7A00B8F0F8 /* Products */,
-				3A45E7400FF54FB1BCE58F75 /* Pods.xcconfig */,
+				948204199B4B3126C90AEF1F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,9 +257,6 @@
 		DD374E971991EB7A00B8F0F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				174AD35719C15B5D00071EB9 /* Crashlytics.framework */,
-				1702F52F19BEBA7C003451FE /* XCTest.framework */,
-				173D9E9219C4DC1B003A8555 /* FirebaseSimpleLogin.framework */,
 				1785451919BEB1000087F9FC /* Social.framework */,
 				1785451719BEB0FB0087F9FC /* Accounts.framework */,
 				DD374E981991EB7A00B8F0F8 /* UIKit.framework */,
@@ -277,7 +280,6 @@
 				DD374E921991EB7A00B8F0F8 /* Frameworks */,
 				DD374E931991EB7A00B8F0F8 /* Resources */,
 				A4FD95E091C74E56912804FF /* Copy Pods Resources */,
-				174AD35619C15B2A00071EB9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -369,19 +371,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		174AD35619C15B2A00071EB9 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Crashlytics.framework/run 22551e33b0f08eb0e8141beb848f674bc64b4091 797e4d38e9a58f82c271baab8b9632b66fb953ea39e59df4d1a616765a4ccf1c";
-		};
 		450A068F35954D83944D1009 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,7 +398,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD374EB81991EB8100B8F0F8 /* ShellScript */ = {
@@ -432,16 +421,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				173D9EAD19C4DC1B003A8555 /* ECDataStorage.m in Sources */,
 				173D9EAE19C4DC1B003A8555 /* ECDefaultViewController.m in Sources */,
 				173D9EBA19C4DC1B003A8555 /* PLPartyDetailCell.m in Sources */,
 				173D9EB819C4DC1B003A8555 /* PLMyPartyDetailViewController.m in Sources */,
 				173D9EB519C4DC1B003A8555 /* PLHomeViewController.m in Sources */,
 				173D9EB619C4DC1B003A8555 /* PLHostViewController.m in Sources */,
+				17FE78411A48867200B412FB /* ECUserManager.m in Sources */,
 				173D9EB319C4DC1B003A8555 /* Attendee.m in Sources */,
 				173D9EBB19C4DC1B003A8555 /* PLReviewViewController.m in Sources */,
 				173D9EB419C4DC1B003A8555 /* Potluck.m in Sources */,
-				173D9EAF19C4DC1B003A8555 /* ECUserManager.m in Sources */,
 				173D9EB919C4DC1B003A8555 /* PLPartyCell.m in Sources */,
 				173D9EAC19C4DC1B003A8555 /* ECAppDelegate.m in Sources */,
 				173D9ECB19C4DCA4003A8555 /* main.m in Sources */,
@@ -538,7 +526,7 @@
 		};
 		DD374ECE1991EB8300B8F0F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A45E7400FF54FB1BCE58F75 /* Pods.xcconfig */;
+			baseConfigurationReference = 98DC3FA7B728B6E2641BD5D2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -563,7 +551,7 @@
 		};
 		DD374ECF1991EB8300B8F0F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A45E7400FF54FB1BCE58F75 /* Pods.xcconfig */;
+			baseConfigurationReference = 517C1F85BDB70C76215643DE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

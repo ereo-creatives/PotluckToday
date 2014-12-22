@@ -7,12 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
-#import <Mantle/Mantle.h>
 
-@interface Attendee : MTLModel
+@interface Attendee : NSObject
 
-@property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSString * food;
+@property (nonatomic, retain) NSString* name;
+@property (nonatomic, retain) NSString* food;
 
 @end
