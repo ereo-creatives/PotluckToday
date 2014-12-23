@@ -7,7 +7,6 @@
 //
 
 #import "PLHomeViewController.h"
-#import "ECUserManager.h"
 
 @interface PLHomeViewController ()
 
@@ -15,22 +14,15 @@
 
 @implementation PLHomeViewController
 
-- (IBAction)facebookLogin:(id)sender
+- (void)awakeFromNib
 {
-    PFObject* testObject = [PFObject objectWithClassName:@"TestObject"];
-    testObject[@"foo"] = @"bar";
-    [testObject saveInBackground];
+    self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentController"];
+    self.menuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"menuController"];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

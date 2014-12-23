@@ -6,9 +6,8 @@
 //  Copyright (c) 2014 Ereo Creatives. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "ECDefaultViewController.h"
+#import <REFrostedViewController/REFrostedViewController.h>
 
-@interface PLHomeViewController : ECDefaultViewController
+@interface PLHomeViewController : REFrostedViewController
 
 @end

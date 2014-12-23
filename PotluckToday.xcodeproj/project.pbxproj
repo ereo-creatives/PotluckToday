@@ -24,6 +24,8 @@
 		173D9EC219C4DC24003A8555 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 173D9EBF19C4DC24003A8555 /* InfoPlist.strings */; };
 		173D9EC319C4DC24003A8555 /* PotluckTodayTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 173D9EC119C4DC24003A8555 /* PotluckTodayTests-Info.plist */; };
 		173D9ECB19C4DCA4003A8555 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 173D9EC819C4DCA4003A8555 /* main.m */; };
+		174AC2A41A49CAFD00633D91 /* PLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174AC2A31A49CAFD00633D91 /* PLLoginViewController.m */; };
+		174AC2A81A49CEBF00633D91 /* PLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174AC2A71A49CEBF00633D91 /* PLNavigationController.m */; };
 		1785451819BEB0FB0087F9FC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785451719BEB0FB0087F9FC /* Accounts.framework */; };
 		1785451A19BEB1000087F9FC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785451919BEB1000087F9FC /* Social.framework */; };
 		17FE78411A48867200B412FB /* ECUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17FE78401A48867200B412FB /* ECUserManager.m */; };
@@ -79,6 +81,10 @@
 		173D9EC519C4DCA4003A8555 /* PotluckToday-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PotluckToday-Info.plist"; sourceTree = "<group>"; };
 		173D9EC619C4DCA4003A8555 /* PotluckToday-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PotluckToday-Prefix.pch"; sourceTree = "<group>"; };
 		173D9EC819C4DCA4003A8555 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		174AC2A21A49CAFD00633D91 /* PLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLLoginViewController.h; sourceTree = "<group>"; };
+		174AC2A31A49CAFD00633D91 /* PLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLLoginViewController.m; sourceTree = "<group>"; };
+		174AC2A61A49CEBF00633D91 /* PLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLNavigationController.h; sourceTree = "<group>"; };
+		174AC2A71A49CEBF00633D91 /* PLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLNavigationController.m; sourceTree = "<group>"; };
 		1785451719BEB0FB0087F9FC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1785451919BEB1000087F9FC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		17FE783F1A48867200B412FB /* ECUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECUserManager.h; sourceTree = "<group>"; };
@@ -175,6 +181,9 @@
 				173D9E8E19C4DC1B003A8555 /* ECDefaultViewController.h */,
 				173D9E8F19C4DC1B003A8555 /* ECDefaultViewController.m */,
 				17FE78421A4886CF00B412FB /* Home */,
+				174AC2A51A49CB0300633D91 /* Login */,
+				174AC2A61A49CEBF00633D91 /* PLNavigationController.h */,
+				174AC2A71A49CEBF00633D91 /* PLNavigationController.m */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -214,6 +223,15 @@
 				17FE78401A48867200B412FB /* ECUserManager.m */,
 			);
 			name = Manager;
+			sourceTree = "<group>";
+		};
+		174AC2A51A49CB0300633D91 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				174AC2A21A49CAFD00633D91 /* PLLoginViewController.h */,
+				174AC2A31A49CAFD00633D91 /* PLLoginViewController.m */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		17FE78421A4886CF00B412FB /* Home */ = {
@@ -421,9 +439,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174AC2A41A49CAFD00633D91 /* PLLoginViewController.m in Sources */,
 				173D9EAE19C4DC1B003A8555 /* ECDefaultViewController.m in Sources */,
 				173D9EBA19C4DC1B003A8555 /* PLPartyDetailCell.m in Sources */,
 				173D9EB819C4DC1B003A8555 /* PLMyPartyDetailViewController.m in Sources */,
+				174AC2A81A49CEBF00633D91 /* PLNavigationController.m in Sources */,
 				173D9EB519C4DC1B003A8555 /* PLHomeViewController.m in Sources */,
 				173D9EB619C4DC1B003A8555 /* PLHostViewController.m in Sources */,
 				17FE78411A48867200B412FB /* ECUserManager.m in Sources */,
@@ -488,6 +508,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -513,6 +534,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;

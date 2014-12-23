@@ -6,3 +6,6 @@ pod "LBBlurredImage"
 pod "Masonry"
 pod 'Parse'
 pod 'FormatterKit'
+pod 'ParseFacebookUtils'
+pod 'SVProgressHUD'
+pod 'REFrostedViewController'
