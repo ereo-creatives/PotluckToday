@@ -16,8 +16,12 @@
 
 - (void)awakeFromNib
 {
-    self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentController"];
-    self.menuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"menuController"];
+    self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentController"]; //PLLoginViewController
+    self.menuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"menuController"]; //PLNavigationController
+    self.backgroundFadeAmount = 0.4;
+    self.liveBlur = NO;
+    self.blurRadius = 30;
+//    self.liveBlurBackgroundStyle = REFrostedViewControllerLiveBackgroundStyleLight;
 }
 
 - (void)viewDidLoad

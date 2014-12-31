@@ -21,8 +21,6 @@
 		173D9EBA19C4DC1B003A8555 /* PLPartyDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 173D9EA519C4DC1B003A8555 /* PLPartyDetailCell.m */; };
 		173D9EBB19C4DC1B003A8555 /* PLReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173D9EA719C4DC1B003A8555 /* PLReviewViewController.m */; };
 		173D9EBD19C4DC1B003A8555 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173D9EAA19C4DC1B003A8555 /* Storyboard.storyboard */; };
-		173D9EC219C4DC24003A8555 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 173D9EBF19C4DC24003A8555 /* InfoPlist.strings */; };
-		173D9EC319C4DC24003A8555 /* PotluckTodayTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 173D9EC119C4DC24003A8555 /* PotluckTodayTests-Info.plist */; };
 		173D9ECB19C4DCA4003A8555 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 173D9EC819C4DCA4003A8555 /* main.m */; };
 		174AC2A41A49CAFD00633D91 /* PLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174AC2A31A49CAFD00633D91 /* PLLoginViewController.m */; };
 		174AC2A81A49CEBF00633D91 /* PLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174AC2A71A49CEBF00633D91 /* PLNavigationController.m */; };
@@ -32,21 +30,9 @@
 		DD374E991991EB7A00B8F0F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E981991EB7A00B8F0F8 /* UIKit.framework */; };
 		DD374E9B1991EB7A00B8F0F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E9A1991EB7A00B8F0F8 /* Foundation.framework */; };
 		DD374E9D1991EB7A00B8F0F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E9C1991EB7A00B8F0F8 /* CoreGraphics.framework */; };
-		DD374EBD1991EB8100B8F0F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E981991EB7A00B8F0F8 /* UIKit.framework */; };
-		DD374EBE1991EB8100B8F0F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E9A1991EB7A00B8F0F8 /* Foundation.framework */; };
-		DD374EBF1991EB8100B8F0F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD374E9E1991EB7A00B8F0F8 /* CoreData.framework */; };
+		DDCEFAC61A4AB619006DCF76 /* PLSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCEFAC51A4AB619006DCF76 /* PLSideMenuViewController.m */; };
 		DE12EC20119F4AD18F4C1CCB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2332EA85EC5E4A0BA5449DBD /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		DD374EC01991EB8100B8F0F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD374E8D1991EB7800B8F0F8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DD374E941991EB7A00B8F0F8;
-			remoteInfo = LuckyPotluck;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		173D9E8719C4DC1B003A8555 /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
@@ -76,8 +62,6 @@
 		173D9EA619C4DC1B003A8555 /* PLReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLReviewViewController.h; sourceTree = "<group>"; };
 		173D9EA719C4DC1B003A8555 /* PLReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLReviewViewController.m; sourceTree = "<group>"; };
 		173D9EAA19C4DC1B003A8555 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		173D9EC019C4DC24003A8555 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		173D9EC119C4DC24003A8555 /* PotluckTodayTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PotluckTodayTests-Info.plist"; sourceTree = "<group>"; };
 		173D9EC519C4DCA4003A8555 /* PotluckToday-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PotluckToday-Info.plist"; sourceTree = "<group>"; };
 		173D9EC619C4DCA4003A8555 /* PotluckToday-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PotluckToday-Prefix.pch"; sourceTree = "<group>"; };
 		173D9EC819C4DCA4003A8555 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,7 +81,8 @@
 		DD374E9A1991EB7A00B8F0F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD374E9C1991EB7A00B8F0F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DD374E9E1991EB7A00B8F0F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DD374EBA1991EB8100B8F0F8 /* PotluckTodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotluckTodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDCEFAC41A4AB619006DCF76 /* PLSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSideMenuViewController.h; sourceTree = "<group>"; };
+		DDCEFAC51A4AB619006DCF76 /* PLSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSideMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,16 +96,6 @@
 				1785451819BEB0FB0087F9FC /* Accounts.framework in Frameworks */,
 				1785451A19BEB1000087F9FC /* Social.framework in Frameworks */,
 				DE12EC20119F4AD18F4C1CCB /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD374EB61991EB8100B8F0F8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD374EBD1991EB8100B8F0F8 /* UIKit.framework in Frameworks */,
-				DD374EBE1991EB8100B8F0F8 /* Foundation.framework in Frameworks */,
-				DD374EBF1991EB8100B8F0F8 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,15 +126,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		173D9EBE19C4DC24003A8555 /* PotluckTodayTests */ = {
-			isa = PBXGroup;
-			children = (
-				173D9EBF19C4DC24003A8555 /* InfoPlist.strings */,
-				173D9EC119C4DC24003A8555 /* PotluckTodayTests-Info.plist */,
-			);
-			path = PotluckTodayTests;
-			sourceTree = "<group>";
-		};
 		173D9EC419C4DC89003A8555 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,8 +148,8 @@
 				173D9E8F19C4DC1B003A8555 /* ECDefaultViewController.m */,
 				17FE78421A4886CF00B412FB /* Home */,
 				174AC2A51A49CB0300633D91 /* Login */,
-				174AC2A61A49CEBF00633D91 /* PLNavigationController.h */,
-				174AC2A71A49CEBF00633D91 /* PLNavigationController.m */,
+				DDCEFAC41A4AB619006DCF76 /* PLSideMenuViewController.h */,
+				DDCEFAC51A4AB619006DCF76 /* PLSideMenuViewController.m */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -228,6 +194,8 @@
 		174AC2A51A49CB0300633D91 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				174AC2A61A49CEBF00633D91 /* PLNavigationController.h */,
+				174AC2A71A49CEBF00633D91 /* PLNavigationController.m */,
 				174AC2A21A49CAFD00633D91 /* PLLoginViewController.h */,
 				174AC2A31A49CAFD00633D91 /* PLLoginViewController.m */,
 			);
@@ -256,7 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				173D9E8619C4DC1B003A8555 /* PotluckToday */,
-				173D9EBE19C4DC24003A8555 /* PotluckTodayTests */,
 				DD374E971991EB7A00B8F0F8 /* Frameworks */,
 				DD374E961991EB7A00B8F0F8 /* Products */,
 				948204199B4B3126C90AEF1F /* Pods */,
@@ -267,7 +234,6 @@
 			isa = PBXGroup;
 			children = (
 				DD374E951991EB7A00B8F0F8 /* PotluckToday.app */,
-				DD374EBA1991EB8100B8F0F8 /* PotluckTodayTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,25 +274,6 @@
 			productReference = DD374E951991EB7A00B8F0F8 /* PotluckToday.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DD374EB91991EB8100B8F0F8 /* PotluckTodayTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DD374ED01991EB8300B8F0F8 /* Build configuration list for PBXNativeTarget "PotluckTodayTests" */;
-			buildPhases = (
-				DD374EB51991EB8100B8F0F8 /* Sources */,
-				DD374EB61991EB8100B8F0F8 /* Frameworks */,
-				DD374EB71991EB8100B8F0F8 /* Resources */,
-				DD374EB81991EB8100B8F0F8 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DD374EC11991EB8100B8F0F8 /* PBXTargetDependency */,
-			);
-			name = PotluckTodayTests;
-			productName = LuckyPotluckTests;
-			productReference = DD374EBA1991EB8100B8F0F8 /* PotluckTodayTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -361,7 +308,6 @@
 			projectRoot = "";
 			targets = (
 				DD374E941991EB7A00B8F0F8 /* PotluckToday */,
-				DD374EB91991EB8100B8F0F8 /* PotluckTodayTests */,
 			);
 		};
 /* End PBXProject section */
@@ -372,17 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				173D9EAB19C4DC1B003A8555 /* Assets.bundle in Resources */,
-				173D9EC319C4DC24003A8555 /* PotluckTodayTests-Info.plist in Resources */,
 				173D9EB119C4DC1B003A8555 /* Images.xcassets in Resources */,
 				173D9EBD19C4DC1B003A8555 /* Storyboard.storyboard in Resources */,
-				173D9EC219C4DC24003A8555 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD374EB71991EB8100B8F0F8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,19 +356,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DD374EB81991EB8100B8F0F8 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -449,6 +373,7 @@
 				17FE78411A48867200B412FB /* ECUserManager.m in Sources */,
 				173D9EB319C4DC1B003A8555 /* Attendee.m in Sources */,
 				173D9EBB19C4DC1B003A8555 /* PLReviewViewController.m in Sources */,
+				DDCEFAC61A4AB619006DCF76 /* PLSideMenuViewController.m in Sources */,
 				173D9EB419C4DC1B003A8555 /* Potluck.m in Sources */,
 				173D9EB919C4DC1B003A8555 /* PLPartyCell.m in Sources */,
 				173D9EAC19C4DC1B003A8555 /* ECAppDelegate.m in Sources */,
@@ -457,33 +382,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD374EB51991EB8100B8F0F8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DD374EC11991EB8100B8F0F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DD374E941991EB7A00B8F0F8 /* PotluckToday */;
-			targetProxy = DD374EC01991EB8100B8F0F8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		173D9EBF19C4DC24003A8555 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				173D9EC019C4DC24003A8555 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DD374ECB1991EB8300B8F0F8 /* Debug */ = {
@@ -596,40 +495,6 @@
 			};
 			name = Release;
 		};
-		DD374ED11991EB8300B8F0F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LuckyPotluck.app/LuckyPotluck";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LuckyPotluck/LuckyPotluck-Prefix.pch";
-				INFOPLIST_FILE = "LuckyPotluckTests/LuckyPotluckTests-Info.plist";
-				PRODUCT_NAME = PotluckTodayTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		DD374ED21991EB8300B8F0F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LuckyPotluck.app/LuckyPotluck";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LuckyPotluck/LuckyPotluck-Prefix.pch";
-				INFOPLIST_FILE = "LuckyPotluckTests/LuckyPotluckTests-Info.plist";
-				PRODUCT_NAME = PotluckTodayTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -647,15 +512,6 @@
 			buildConfigurations = (
 				DD374ECE1991EB8300B8F0F8 /* Debug */,
 				DD374ECF1991EB8300B8F0F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DD374ED01991EB8300B8F0F8 /* Build configuration list for PBXNativeTarget "PotluckTodayTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DD374ED11991EB8300B8F0F8 /* Debug */,
-				DD374ED21991EB8300B8F0F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

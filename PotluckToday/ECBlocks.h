@@ -13,6 +13,8 @@ typedef void (^BooleanCompletionBlock)(BOOL result, NSError* error);
 
 typedef void (^ObjectCompletionBlock)(id object, NSError* error);
 
+typedef void (^UserCompletionBlock)(PFUser* user, NSError* error);
+
 typedef void (^ArrayCompletionBlock)(NSArray* array, NSError* error);
 
 //typedef void (^RequestOperationConfigBlock)(RequestOperationConfig *config);

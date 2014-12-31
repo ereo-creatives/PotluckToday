@@ -8,6 +8,8 @@
 
 #import "ECDefaultViewController.h"
 
-@interface PLNavigationController : ECDefaultViewController
+@interface PLNavigationController : UINavigationController
+
+- (UIViewController*)rootViewController;
 
 @end

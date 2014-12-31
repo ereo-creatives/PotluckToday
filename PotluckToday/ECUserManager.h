@@ -10,4 +10,8 @@
 
 @interface ECUserManager : NSObject
 
++ (BOOL)isLoggedIn;
++ (BOOL)hasCompleteDataIn:(PFUser*)user;
++ (void)saveUser:(PFUser*)user withDictionary:(NSDictionary*)userData completion:(BooleanCompletionBlock)block;
+
 @end

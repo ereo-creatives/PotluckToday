@@ -10,4 +10,6 @@
 
 @interface PLLoginViewController : ECDefaultViewController
 
+- (void)facebookLogin;
+- (void)logout;
 @end

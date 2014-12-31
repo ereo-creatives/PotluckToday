@@ -11,7 +11,9 @@
 #import "REFrostedViewController.h"
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 
-@interface PLLoginViewController ()
+@interface PLLoginViewController () {
+    UIPanGestureRecognizer* _panGestureRec;
+}
 
 @end
 
@@ -20,40 +22,65 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _panGestureRec = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognized:)];
+    if ([ECUserManager isLoggedIn]) {
+        [self enableMenuFeature];
+    }
+    else {
+        [self disableMenuFeature];
+    }
 }
 
-- (IBAction)showMenu
+- (void)enableMenuFeature
 {
-    // Dismiss keyboard (optional)
-    //
-    [self.view endEditing:YES];
-    [self.frostedViewController.view endEditing:YES];
-
-    // Present the view controller
-    //
-    [self.frostedViewController presentMenuViewController];
+    self.navigationItem.leftBarButtonItem.title = @"Menu";
+    [self.view addGestureRecognizer:_panGestureRec];
 }
 
-- (IBAction)facebookLogin:(id)sender
+- (void)disableMenuFeature
+{
+    self.navigationItem.leftBarButtonItem.title = @"Login";
+    [self.view removeGestureRecognizer:_panGestureRec];
+}
+
+- (void)loggedIn
+{
+
+    [self enableMenuFeature];
+}
+
+- (void)logout
+{
+
+    [self disableMenuFeature];
+    [PFUser logOut];
+}
+
+- (IBAction)leftMenuButtonTapped
+{
+    if ([ECUserManager isLoggedIn]) {
+        [self showSideMenu];
+    }
+    else {
+        [self facebookLogin];
+    }
+}
+
+- (void)facebookLogin
 {
     NSArray* permissionsArray = @[ @"public_profile", @"user_about_me", @"user_birthday", @"user_location", @"email", @"user_friends" ];
-    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
+    [self showIndicator];
     [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser* user, NSError* error) {
-        [SVProgressHUD dismiss];
-        [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
+        [self hideIndicator];
+        [self showIndicator];
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             NSError *error = nil;
-            //try refreshing the user in case that is the problem (its not, sometimes?).
             [user fetch:&error];
             if (error) {
                 NSLog(@"ERROR. %@", error.localizedDescription);
             }
-            NSLog(@"%@", user);
-
             dispatch_async(dispatch_get_main_queue(), ^{
-                [SVProgressHUD dismiss];
-
+                [self hideIndicator];
                 if (!user) {
                     NSString *errorMessage = nil;
                     if (!error) {
@@ -63,98 +90,48 @@
                         NSLog(@"Uh oh. An error occurred: %@", error);
                         errorMessage = [error localizedDescription];
                     }
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Log In Error"
-                                                                    message:errorMessage
-                                                                   delegate:nil
-                                                          cancelButtonTitle:@"OK"
-                                                          otherButtonTitles:nil];
-                    [alert show];
+                    [TSMessage showNotificationWithTitle:@"Log In Error"
+                                                subtitle:errorMessage
+                                                    type:TSMessageNotificationTypeError];
                 } else {
-                    if (user.isNew) {
-                        NSLog(@"User for Facebook! (new user)");
-
-                        [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
-
-                        FBRequest *request = [FBRequest requestForMe];
-                        [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
-                            [SVProgressHUD dismiss];
-                            if (!error) {
-                                NSDictionary *userData = (NSDictionary *)result;
-                                NSString *name = userData[@"name"];
-                                user[@"email"] = userData[@"email"];
-                                user[@"displayName"] = name;
-                                user[@"facebookName"] = name;
-                                user[@"facebookId"] = [result objectForKey:@"id"];
-
-                                [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
-
-                                [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-                                    [SVProgressHUD dismiss];
-
-                                    if (error) {
-                                        NSLog(@"%@", error.description);
-                                    }
-                                    NSLog(@"User saved");
-                                }];
-                                NSLog(@"User signed up and logged in through Facebook!");
-
-                            } else {
-                                if ([error.userInfo[FBErrorParsedJSONResponseKey][@"body"][@"error"][@"type"] isEqualToString:@"OAuthException"]) {
-                                    NSLog(@"The facebook session was invalidated");
-                                }
-                                else {
-                                    NSLog(@"Some other error: %@", error);
-                                }
-                            }
-                        }];
-                    } else {
-                        NSLog(@"User logged in through Facebook!");
-
-                        if (!user[@"displayName"] || !user[@"facebookName"] || !user[@"facebookId"]) {
-
-                            [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
-
-                            FBRequest *request = [FBRequest requestForMe];
-                            [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
-                                [SVProgressHUD dismiss];
-
-                                if (!error) {
-                                    NSDictionary *userData = (NSDictionary *)result;
-                                    NSString *name = userData[@"name"];
-                                    user[@"email"] = userData[@"email"];
-                                    user[@"displayName"] = name;
-                                    user[@"facebookName"] = name;
-                                    user[@"facebookId"] = [result objectForKey:@"id"];
-
-                                    [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-                                        if (error) {
-                                            NSLog(@"%@", error.description);
-                                        }
-                                        NSLog(@"456");
-                                    }];
-
-                                } else {
-                                    if ([error.userInfo[FBErrorParsedJSONResponseKey][@"body"][@"error"][@"type"] isEqualToString:@"OAuthException"]) {
-                                        NSLog(@"The facebook session was invalidated");
-                                    }
-                                    else {
-                                        NSLog(@"Some other error: %@", error);
-                                    }
-                                }
-                                
-                                
+                    FBRequest *request = [FBRequest requestForMe];
+                    [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+                        [self hideIndicator];
+                        if (!error) {
+                            [ECUserManager saveUser:user withDictionary:result completion:^(BOOL result, NSError *error) {
+                                [TSMessage showNotificationWithTitle:user.isNew ? @"Sign Up Successful!" : @"Login Successful"
+                                                                type:TSMessageNotificationTypeSuccess];
                             }];
+                            [self enableMenuFeature];
+                        } else {
+                            if ([error.userInfo[FBErrorParsedJSONResponseKey][@"body"][@"error"][@"type"] isEqualToString:@"OAuthException"]) {
+                                NSLog(@"The facebook session was invalidated");
+                            }
+                            else {
+                                NSLog(@"Some other error: %@", error);
+                            }
                         }
-                        else {
-                            NSLog(@"123");
-                        }
-                    }
+                    }];
                 }
                 
             });
         });
 
     }];
+}
+
+- (void)panGestureRecognized:(UIPanGestureRecognizer*)sender
+{
+    [self.view endEditing:YES];
+    [self.frostedViewController.view endEditing:YES];
+    [self.frostedViewController panGestureRecognized:sender];
+}
+
+- (void)showSideMenu
+{
+    [self.view endEditing:YES];
+    [self.frostedViewController.view endEditing:YES];
+    [self.frostedViewController presentMenuViewController];
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,7 +7,6 @@
 //
 
 #import "PLNavigationController.h"
-#import "REFrostedViewController.h"
 
 @interface PLNavigationController ()
 
@@ -18,25 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognized:)]];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-- (void)panGestureRecognized:(UIPanGestureRecognizer*)sender
+- (UIViewController*)rootViewController
 {
-    // Dismiss keyboard (optional)
-    //
-    [self.view endEditing:YES];
-    [self.frostedViewController.view endEditing:YES];
-
-    // Present the view controller
-    //
-    [self.frostedViewController panGestureRecognized:sender];
+    return [[self viewControllers] objectAtIndex:0];
 }
-
 @end

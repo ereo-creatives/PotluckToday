@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <TSMessages/TSMessage.h>
 
 @interface ECDefaultViewController : UIViewController
+
+- (void)showIndicator;
+- (void)hideIndicator;
 
 @end
